@@ -46,6 +46,13 @@
     <title>Elo Calculator</title>
 </head>
 <body>
+<script>
+    function calcElo() {
+    var outputNumber = document.getElementByName("eloCalc");
+    var td = outputNumber.getElementByName("display")[0];
+    td.style.display = "new val!";
+    }
+</script>
 <img src="images/logo.png" alt="Club logo" class="inline" width="225" height="200"/>
 <img src="images/white.png" alt="Header" class="inline" width="750" height="200"/>
 <p style="color:black; position:absolute; top:-20px; left:750px; font-size:20px;">USCF Affiliate: A7790127</p>
@@ -57,6 +64,30 @@
 <br>
 <br>
 <br>
+<form name="eloCalc" method="POST" action="/">
+    <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color: black;">Elo Calculator</h2>
+  <input name="CurrentElo" type="text" placeholder="Your Current Rating" required>
+  <input name="NumberOfRounds" type="text" placeholder="Number Of Rounds" required>
+    <input name="YourScore" type="text" placeholder="Your Score" required>
+    <br>
+    <br>
+    <input name="Round1Opponent" type="text" placeholder="Round 1 Opponent's Elo">
+    <br>
+    <input name="Round2Opponent" type="text" placeholder="Round 2 Opponent's Elo">
+    <br>
+    <input name="Round3Opponent" type="text" placeholder="Round 3 Opponent's Elo">
+    <br>
+    <input name="Round4Opponent" type="text" placeholder="Round 4 Opponent's Elo">
+    <br>
+    <input name="Round5Opponent" type="text" placeholder="Round 5 Opponent's Elo">
+    <br>
+  <button type="submit" onclick="calcElo()">Calculate</button>
+    <br>
+    <h2 style="color: black;">Your Calculated Elo</h2>
+    <br>
+    <input type = "text" name="display" id = "display" disabled>
+
+</form>
 <br>
 <br>
 
