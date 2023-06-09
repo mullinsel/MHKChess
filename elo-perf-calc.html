@@ -46,11 +46,45 @@
     <title>Elo Calculator</title>
 </head>
 <body>
-<script>
-    function calcElo() {
-    var outputNumber = document.getElementByName("eloCalc");
-    var td = outputNumber.getElementByName("display")[0];
-    td.style.display = "new val!";
+<script type="text/javascript">
+    function W(X,Y){
+        return 1/(1+Math.pow(10,-(X-Y)/400));
+    }
+</script>
+<script type="text/javascript">
+    function bonus(a,b){
+        return (a+b+Math.abs(a-b))/2;
+    }
+</script>
+<script type="text/javascript">
+    function calcElo(){
+        var R0 = document.getElementById("CurrentElo").value;
+        var Nrounds = document.getElementById("NumberOfRounds").value;
+        var N = document.getElementById("totalGames").value;
+        var S = document.getElementById("YourScore").value;
+        var Nstar = Math.round(50/(Math.sqrt(0.662+0.00000739*(2569-R0)*(2569-R0))));
+        var Nprime = N;
+        if (Nstar < N){
+            Nprime=Nstar;
+        }
+        else{
+            Nprime=N;
+        }
+        var K = 800/(Nprime+Nrounds);
+        const Ri = [document.getElementById("Round1Opponent").value,document.getElementById("Round2Opponent").value,document.getElementById("Round3Opponent").value,document.getElementById("Round4Opponent").value,document.getElementById("Round5Opponent").value];
+        var Efinal = 0;
+        var count = 0;
+        for (let i = 0; i < Nrounds; i++) {
+            if (Ri[i]!=0){
+                Efinal += W(R0,Ri[i]);
+                count += 1;
+            }
+        }
+        var stepone = K*(S-Efinal)-14*Math.sqrt(bonus(Nrounds,4));
+        var steptwo = bonus(0,stepone);
+        var Rs = R0 + K*(S-Efinal)+steptwo;
+        document.getElementById("display").value = stepone;
+        document.getElementById("display2").value = K*(S-Efinal);
     }
 </script>
 <img src="images/logo.png" alt="Club logo" class="inline" width="225" height="200"/>
@@ -64,30 +98,29 @@
 <br>
 <br>
 <br>
-<form name="eloCalc" method="POST" action="/">
-    <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color: black;">Elo Calculator</h2>
-  <input name="CurrentElo" type="text" placeholder="Your Current Rating" required>
-  <input name="NumberOfRounds" type="text" placeholder="Number Of Rounds" required>
-    <input name="YourScore" type="text" placeholder="Your Score" required>
-    <br>
-    <br>
-    <input name="Round1Opponent" type="text" placeholder="Round 1 Opponent's Elo">
-    <br>
-    <input name="Round2Opponent" type="text" placeholder="Round 2 Opponent's Elo">
-    <br>
-    <input name="Round3Opponent" type="text" placeholder="Round 3 Opponent's Elo">
-    <br>
-    <input name="Round4Opponent" type="text" placeholder="Round 4 Opponent's Elo">
-    <br>
-    <input name="Round5Opponent" type="text" placeholder="Round 5 Opponent's Elo">
-    <br>
-  <button type="submit" onclick="calcElo()">Calculate</button>
-    <br>
-    <h2 style="color: black;">Your Calculated Elo</h2>
-    <br>
-    <input type = "text" name="display" id = "display" disabled>
-
-</form>
+<h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color: black;">Elo Calculator</h2>
+<input name="CurrentElo" id="CurrentElo" type="text" placeholder="Your Current Rating" required>
+<input name="NumberOfRounds" id = "NumberOfRounds" type="text" placeholder="Number Of Rounds" required>
+<input name="YourScore" id="YourScore" type="text" placeholder="Your Score" required>
+<input name="totalGames" id="totalGames" type="text" placeholder="Number of games you have ever played" required>
+<br>
+<br>
+<input name="Round1Opponent" id="Round1Opponent" type="text" placeholder="Round 1 Opponent's Elo" value="0">
+<br>
+<input name="Round2Opponent" id="Round2Opponent" type="text" placeholder="Round 2 Opponent's Elo" value="0">
+<br>
+<input name="Round3Opponent" id="Round3Opponent" type="text" placeholder="Round 3 Opponent's Elo" value="0">
+<br>
+<input name="Round4Opponent" id="Round4Opponent" type="text" placeholder="Round 4 Opponent's Elo" value="0">
+<br>
+<input name="Round5Opponent" id="Round5Opponent" type="text" placeholder="Round 5 Opponent's Elo" value="0">
+<br>
+<button type="submit" onclick="calcElo()">Calculate</button>
+<br>
+<h2 style="color: black;">Your Calculated Elo</h2>
+<br>
+<input type = "text" name="display" id = "display" value="0" disabled>
+<input type = "text" name="display2" id = "display2" value="0" disabled>
 <br>
 <br>
 
