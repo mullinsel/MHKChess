@@ -58,12 +58,12 @@
 </script>
 <script type="text/javascript">
     function calcElo(){
-        var R0 = document.getElementById("CurrentElo").value;
-        var Nrounds = document.getElementById("NumberOfRounds").value;
-        var N = document.getElementById("totalGames").value;
-        var S = document.getElementById("YourScore").value;
+        var R0 = Number(document.getElementById("CurrentElo").value);
+        var Nrounds = Number(document.getElementById("NumberOfRounds").value);
+        var N = Number(document.getElementById("totalGames").value);
+        var S = Number(document.getElementById("YourScore").value);
         var Nstar = Math.round(50/(Math.sqrt(0.662+0.00000739*(2569-R0)*(2569-R0))));
-        var Nprime = N;
+        var Nprime = 0;
         if (Nstar < N){
             Nprime=Nstar;
         }
@@ -83,8 +83,8 @@
         var stepone = K*(S-Efinal)-14*Math.sqrt(bonus(Nrounds,4));
         var steptwo = bonus(0,stepone);
         var Rs = R0 + K*(S-Efinal)+steptwo;
-        document.getElementById("display").value = stepone;
-        document.getElementById("display2").value = K*(S-Efinal);
+        document.getElementById("display").value = Math.round(Rs);
+
     }
 </script>
 <img src="images/logo.png" alt="Club logo" class="inline" width="225" height="200"/>
@@ -94,8 +94,10 @@
 <a target="_blank" href ="https://www.chess.com/clubs/members/manhattan-chess"> <img src="images/chess.png" style="position:absolute; top:150px; left:880px" alt="Chess Logo" width="100" height="40"/></a>
 <a target="_blank" href ="https://www.flickr.com/photos/198250331@N07/"> <img src="images/flickerlogo.png" style="position:absolute; top:100px; left:900px" alt="Flicker Logo" width="80" height="40"/></a>
 <a target="_blank" href = "https://www.facebook.com/Manhattanhessclub"><img src="images/fblogo.png" style="position:absolute; top:50px; left:940px" alt="Facebook Logo" width="40" height="40"/></a>
-
-<br>
+<button><a href="/currentTournament.html" class="button">Current Tournament</a></button>
+<button><a href="/upcomingTournaments.html"class="button" style="display:inline;">Upcoming Tournaments</a></button>
+<button><a href="/tournamentHistory.html"class="button">Tournament History</a></button>
+<button><a href="/aboutUs.html" class="button">About Us</a></button>
 <br>
 <br>
 <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color: black;">Elo Calculator</h2>
@@ -120,7 +122,7 @@
 <h2 style="color: black;">Your Calculated Elo</h2>
 <br>
 <input type = "text" name="display" id = "display" value="0" disabled>
-<input type = "text" name="display2" id = "display2" value="0" disabled>
+
 <br>
 <br>
 
