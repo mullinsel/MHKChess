@@ -1,91 +1,84 @@
-<svelte:head>    
-    <title>Elo Calculator</title>
-</svelte:head>
 
-<div class="elo-perf-calc">
-<script type="text/javascript">
-    function calcNorm(){
-    var Nrounds = Number(document.getElementById("NumberOfRoundsnorm").value);
-    var S = Number(document.getElementById("YourScorenorm").value);
-    const Ri = [document.getElementById("Round1Opponentnorm").value,document.getElementById("Round2Opponentnorm").value,document.getElementById("Round3Opponentnorm").value,document.getElementById("Round4Opponentnorm").value,document.getElementById("Round5Opponentnorm").value];
-    const normLevels = [1200,1400,1600,1800,2000,2200,2400];
-    const delta = [];
-    const CT = [];
-    const STCT = [];
-    var CTsum = 0;
-    for (let i = 0; i < Nrounds; i++) {
-        for (let j = 0; j < 7; j++) {
-            if (Ri[i]!=0){
-                delta[i][j] = normLevels[j] - Ri[i];
-            }
-        }
-    }
-    for (let i = 0; i < Nrounds; i++) {
-        for (let j = 0; j < 7; j++) {
-            if (delta[i][j] <= -400){
-                CT[i][j] = 0;
-            }
-            else if (-400 < delta[i][j] <= 0){
-                CT[i][j]=0.5+delta[i][j]/800;
-            }
-            else if (0 < delta[i][j] <= 200){
-                CT[i][j]=0.5+delta[i][j]/400;
-            }
-            else if (200 < delta[j][i]){
-                CT[i][j]=1;
-            }
-        }
-    }
-    for (let j = 0; j < 7; j++) {
-        CTsum = 0;
+<script lang="ts">
+    function calcNorm() {
+        var Nrounds = Number(document.getElementById("NumberOfRoundsnorm").value);
+        var S = Number(document.getElementById("YourScorenorm").value);
+        const Ri = [document.getElementById("Round1Opponentnorm").value,document.getElementById("Round2Opponentnorm").value,document.getElementById("Round3Opponentnorm").value,document.getElementById("Round4Opponentnorm").value,document.getElementById("Round5Opponentnorm").value];
+        const normLevels = [1200,1400,1600,1800,2000,2200,2400];
+        const delta = [];
+        const CT = [];
+        const STCT = [];
+        var CTsum = 0;
         for (let i = 0; i < Nrounds; i++) {
-            CTsum += CT[i][j];
+            for (let j = 0; j < 7; j++) {
+                if (Ri[i]!=0){
+                    delta[i][j] = normLevels[j] - Ri[i];
+                }
+            }
         }
-        STCT[j] = S - CTsum;
-    }
-    var norm = 0;
-    for (let j = 0; j < 7; j++) {
-        if (STCT[j]>1){
-            norm += 1;
+        for (let i = 0; i < Nrounds; i++) {
+            for (let j = 0; j < 7; j++) {
+                if (delta[i][j] <= -400){
+                    CT[i][j] = 0;
+                }
+                else if (-400 < delta[i][j] <= 0){
+                    CT[i][j]=0.5+delta[i][j]/800;
+                }
+                else if (0 < delta[i][j] <= 200){
+                    CT[i][j]=0.5+delta[i][j]/400;
+                }
+                else if (200 < delta[j][i]){
+                    CT[i][j]=1;
+                }
+            }
+        }
+        for (let j = 0; j < 7; j++) {
+            CTsum = 0;
+            for (let i = 0; i < Nrounds; i++) {
+                CTsum += CT[i][j];
+            }
+            STCT[j] = S - CTsum;
+        }
+        var norm = 0;
+        for (let j = 0; j < 7; j++) {
+            if (STCT[j]>1){
+                norm += 1;
+            }
+        }
+        if (norm == 1){
+            document.getElementById("display3").value = '4th category norm';
+        }
+        else if (norm == 2){
+            document.getElementById("display3").value = '3rd category norm';
+        }
+        else if (norm == 3){
+            document.getElementById("display3").value = '2nd category norm';
+        }
+        else if (norm == 4){
+            document.getElementById("display3").value = '1st category norm';
+        }
+        else if (norm == 5){
+            document.getElementById("display3").value = 'CM norm';
+        }
+        else if (norm == 6){
+            document.getElementById("display3").value = 'LM norm';
+        }
+        elif (norm == 7){
+            document.getElementById("display3").value = 'LSM norm';
+        }
+        elif (norm == 0){
+            document.getElementById("display3").value = 'No norm';
         }
     }
-    if (norm == 1){
-        document.getElementById("display3").value = '4th category norm';
-    }
-    else if (norm == 2){
-        document.getElementById("display3").value = '3rd category norm';
-    }
-    else if (norm == 3){
-        document.getElementById("display3").value = '2nd category norm';
-    }
-    else if (norm == 4){
-        document.getElementById("display3").value = '1st category norm';
-    }
-    else if (norm == 5){
-        document.getElementById("display3").value = 'CM norm';
-    }
-    else if (norm == 6){
-        document.getElementById("display3").value = 'LM norm';
-    }
-    elif (norm == 7){
-        document.getElementById("display3").value = 'LSM norm';
-    }
-    elif (norm == 0){
-        document.getElementById("display3").value = 'No norm';
-    }
-    }
-</script>
-<script type="text/javascript">
+
     function W(X,Y){
         return 1/(1+Math.pow(10,-(X-Y)/400));
     }
-</script>
-<script type="text/javascript">
+
     function bonus(a,b){
         return (a+b+Math.abs(a-b))/2;
     }
-</script>
-<script type="text/javascript">
+
     function calcElo(){
         var R0 = Number(document.getElementById("CurrentElo").value);
         var Nrounds = Number(document.getElementById("NumberOfRounds").value);
@@ -122,78 +115,83 @@
     }
 </script>
 
-<div class = "Header">
-    <img src="images/logo.png" alt="Club logo" style = "position:absolute; top:4px; left:30px;" width="225" height="190"/>
-    <img src="images/white.png" alt="Header" width="980" height="200" style = "border: 1px solid black;"/>
-    <p style="color:black; position:absolute; top:-20px; left:300px; font-size:60px;">Elo/Performance <br>Calculator</p>
-    <a target="_blank" href ="https://www.chess.com/clubs/members/manhattan-chess"> <img src="images/chess.png" style="position:absolute; top:150px; left:880px" alt="Chess Logo" width="100" height="40"/></a>
-    <a target="_blank" href ="https://www.flickr.com/photos/198250331@N07/"> <img src="images/flickerlogo.png" style="position:absolute; top:100px; left:900px" alt="Flicker Logo" width="80" height="40"/></a>
-    <a target="_blank" href = "https://www.facebook.com/Manhattanhessclub"><img src="images/fblogo.png" style="position:absolute; top:50px; left:940px" alt="Facebook Logo" width="40" height="40"/></a>
-    <!--<p style="color:black; position:absolute; top:130px; left:325px; font-size:30px;">Thursday 6pm-9pm and Sunday 6pm-9pm</p>--->
-</div>
+<svelte:head>    
+    <title>Elo Calculator</title>
+</svelte:head>
 
-<div class = "Navigation bar">
-    <button><a href="#/currentTournament.html" class="button">Current Tournament</a></button>
-    <button><a href="#/upcomingTournaments.html"class="button" style="display:inline;">Upcoming Tournaments</a></button>
-    <button><a href="#/tournamentHistory.html"class="button">Tournament History</a></button>
-    <button><a href="#/aboutUs.html" class="button">About Us</a></button>
-</div>
+<div class="elo-perf-calc">
+    <div class = "Header">
+        <img src="images/logo.png" alt="Club logo" style = "position:absolute; top:4px; left:30px;" width="225" height="190"/>
+        <img src="images/white.png" alt="Header" width="980" height="200" style = "border: 1px solid black;"/>
+        <p style="color:black; position:absolute; top:-20px; left:300px; font-size:60px;">Elo/Performance <br>Calculator</p>
+        <a target="_blank" href ="https://www.chess.com/clubs/members/manhattan-chess"> <img src="images/chess.png" style="position:absolute; top:150px; left:880px" alt="Chess Logo" width="100" height="40"/></a>
+        <a target="_blank" href ="https://www.flickr.com/photos/198250331@N07/"> <img src="images/flickerlogo.png" style="position:absolute; top:100px; left:900px" alt="Flicker Logo" width="80" height="40"/></a>
+        <a target="_blank" href = "https://www.facebook.com/Manhattanhessclub"><img src="images/fblogo.png" style="position:absolute; top:50px; left:940px" alt="Facebook Logo" width="40" height="40"/></a>
+        <!--<p style="color:black; position:absolute; top:130px; left:325px; font-size:30px;">Thursday 6pm-9pm and Sunday 6pm-9pm</p>--->
+    </div>
 
-<br>
-<br>
-<h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color: black;">Elo Calculator</h2>
-<input name="CurrentElo" id="CurrentElo" type="text" placeholder="Your Current Rating" required>
-<input name="NumberOfRounds" id = "NumberOfRounds" type="text" placeholder="Number Of Rounds" required>
-<input name="YourScore" id="YourScore" type="text" placeholder="Your Score" required>
-<input name="totalGames" id="totalGames" type="text" placeholder="Number of prior games" required>
-<br>
-<br>
-<input name="Round1Opponent" id="Round1Opponent" type="text" placeholder="Round 1 Opponent's Elo" value="0">
-<br>
-<input name="Round2Opponent" id="Round2Opponent" type="text" placeholder="Round 2 Opponent's Elo" value="0">
-<br>
-<input name="Round3Opponent" id="Round3Opponent" type="text" placeholder="Round 3 Opponent's Elo" value="0">
-<br>
-<input name="Round4Opponent" id="Round4Opponent" type="text" placeholder="Round 4 Opponent's Elo" value="0">
-<br>
-<input name="Round5Opponent" id="Round5Opponent" type="text" placeholder="Round 5 Opponent's Elo" value="0">
-<br>
-<button type="submit" onclick="calcElo()">Calculate</button>
-<br>
-<h2 style="color: black;">Your Calculated Elo</h2>
-<input type = "text" name="display" id = "display" value="0" disabled>
-<h2 style="color: black;">Your Performance Rating</h2>
-<input type = "text" name="display2" id = "display2" value="0" disabled>
-<br>
-<h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color: black;">Norm Calculator</h2>
-<input name="CurrentElonorm" id="CurrentElonorm" type="text" placeholder="Your Current Rating" required>
-<input name="NumberOfRoundsnorm" id = "NumberOfRoundsnorm" type="text" placeholder="Number Of Rounds" required>
-<input name="YourScorenorm" id="YourScorenorm" type="text" placeholder="Your Score" required>
-<input name="totalGamesnorm" id="totalGamesnorm" type="text" placeholder="Number of prior games" required>
-<br>
-<br>
-<input name="Round1Opponentnorm" id="Round1Opponentnorm" type="text" placeholder="Round 1 Opponent's Post Event Elo" value="0">
-<br>
-<input name="Round2Opponentnorm" id="Round2Opponentnorm" type="text" placeholder="Round 2 Opponent's Post Event Elo" value="0">
-<br>
-<input name="Round3Opponentnorm" id="Round3Opponentnorm" type="text" placeholder="Round 3 Opponent's Post Event Elo" value="0">
-<br>
-<input name="Round4Opponentnorm" id="Round4Opponentnorm" type="text" placeholder="Round 4 Opponent's Post Event Elo" value="0">
-<br>
-<input name="Round5Opponentnorm" id="Round5Opponentnorm" type="text" placeholder="Round 5 Opponent's Post Event Elo" value="0">
-<br>
-<button type="submit" onclick="calcNorm()">Calculate</button>
-<br>
-<h2 style="color: black;">Your Calculated Norm</h2>
-<input type = "text" name="display3" id = "display3" value="0" disabled>
-<br>
-<br>
-<div class="Footer" style="position:absolute; top:1000px; left:10px; ">
-    <p style="color:black; position:absolute; top:70px; left:130px; font-size:20px;">USCF Affiliate: A7790127</p>
-    <h2><a href="mailto:mullinsel93@gmail.com" style="position:absolute; top:85px; left:850px; border:2px solid; text-align:center; margin: 0px; font-size:20px;">Contact Us</a></h2>
-    <img src="images/USCFlogo.png" alt="USCFlogo" style="position: absolute; top:22px; left:1px;" width="120" height="98"/>
-    <img src="images/white.png" alt="Footerbg" width="980" height="100" style = "border: 1px solid black;"/>
-</div>
+    <div class = "Navigation bar">
+        <button><a href="#/currentTournament.html" class="button">Current Tournament</a></button>
+        <button><a href="#/upcomingTournaments.html"class="button" style="display:inline;">Upcoming Tournaments</a></button>
+        <button><a href="#/tournamentHistory.html"class="button">Tournament History</a></button>
+        <button><a href="#/aboutUs.html" class="button">About Us</a></button>
+    </div>
+
+    <br>
+    <br>
+    <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color: black;">Elo Calculator</h2>
+    <input name="CurrentElo" id="CurrentElo" type="text" placeholder="Your Current Rating" required>
+    <input name="NumberOfRounds" id = "NumberOfRounds" type="text" placeholder="Number Of Rounds" required>
+    <input name="YourScore" id="YourScore" type="text" placeholder="Your Score" required>
+    <input name="totalGames" id="totalGames" type="text" placeholder="Number of prior games" required>
+    <br>
+    <br>
+    <input name="Round1Opponent" id="Round1Opponent" type="text" placeholder="Round 1 Opponent's Elo" value="0">
+    <br>
+    <input name="Round2Opponent" id="Round2Opponent" type="text" placeholder="Round 2 Opponent's Elo" value="0">
+    <br>
+    <input name="Round3Opponent" id="Round3Opponent" type="text" placeholder="Round 3 Opponent's Elo" value="0">
+    <br>
+    <input name="Round4Opponent" id="Round4Opponent" type="text" placeholder="Round 4 Opponent's Elo" value="0">
+    <br>
+    <input name="Round5Opponent" id="Round5Opponent" type="text" placeholder="Round 5 Opponent's Elo" value="0">
+    <br>
+    <button type="submit" onclick="calcElo()">Calculate</button>
+    <br>
+    <h2 style="color: black;">Your Calculated Elo</h2>
+    <input type = "text" name="display" id = "display" value="0" disabled>
+    <h2 style="color: black;">Your Performance Rating</h2>
+    <input type = "text" name="display2" id = "display2" value="0" disabled>
+    <br>
+    <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color: black;">Norm Calculator</h2>
+    <input name="CurrentElonorm" id="CurrentElonorm" type="text" placeholder="Your Current Rating" required>
+    <input name="NumberOfRoundsnorm" id = "NumberOfRoundsnorm" type="text" placeholder="Number Of Rounds" required>
+    <input name="YourScorenorm" id="YourScorenorm" type="text" placeholder="Your Score" required>
+    <input name="totalGamesnorm" id="totalGamesnorm" type="text" placeholder="Number of prior games" required>
+    <br>
+    <br>
+    <input name="Round1Opponentnorm" id="Round1Opponentnorm" type="text" placeholder="Round 1 Opponent's Post Event Elo" value="0">
+    <br>
+    <input name="Round2Opponentnorm" id="Round2Opponentnorm" type="text" placeholder="Round 2 Opponent's Post Event Elo" value="0">
+    <br>
+    <input name="Round3Opponentnorm" id="Round3Opponentnorm" type="text" placeholder="Round 3 Opponent's Post Event Elo" value="0">
+    <br>
+    <input name="Round4Opponentnorm" id="Round4Opponentnorm" type="text" placeholder="Round 4 Opponent's Post Event Elo" value="0">
+    <br>
+    <input name="Round5Opponentnorm" id="Round5Opponentnorm" type="text" placeholder="Round 5 Opponent's Post Event Elo" value="0">
+    <br>
+    <button type="submit" onclick="calcNorm()">Calculate</button>
+    <br>
+    <h2 style="color: black;">Your Calculated Norm</h2>
+    <input type = "text" name="display3" id = "display3" value="0" disabled>
+    <br>
+    <br>
+    <div class="Footer" style="position:absolute; top:1000px; left:10px; ">
+        <p style="color:black; position:absolute; top:70px; left:130px; font-size:20px;">USCF Affiliate: A7790127</p>
+        <h2><a href="mailto:mullinsel93@gmail.com" style="position:absolute; top:85px; left:850px; border:2px solid; text-align:center; margin: 0px; font-size:20px;">Contact Us</a></h2>
+        <img src="images/USCFlogo.png" alt="USCFlogo" style="position: absolute; top:22px; left:1px;" width="120" height="98"/>
+        <img src="images/white.png" alt="Footerbg" width="980" height="100" style = "border: 1px solid black;"/>
+    </div>
 </div>
 
 <style>
