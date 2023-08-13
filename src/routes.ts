@@ -11,7 +11,8 @@ import ClubStandings from './pages/ClubStandings.svelte';
 import OpenFinal from './pages/OpenFinal.svelte';
 import SeniorFinal from './pages/SeniorFinal.svelte';
 import Donors from './pages/Donors.svelte';
-import Lessons from './pages/Lessons.svelte'
+import Lessons from './pages/Lessons.svelte';
+import RunningATournament from './pages/RunningATournament.svelte';
 
 // Export the route definition object
 export default {
@@ -28,4 +29,5 @@ export default {
     '/seniorfinal.html': SeniorFinal,
     '/donors.html': Donors,
     '/lessons.html': Lessons,
+    '/runningATournament.html': RunningATournament,
 }
