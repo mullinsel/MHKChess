@@ -13,18 +13,18 @@
     </div>
     
     <div class = "Navigation bar">
-        <button><a href="/"class="button">Home</a></button>
-        <button><a href="/upcomingTournaments.html"class="button" style="display:inline;">Upcoming Tournaments</a></button>
-        <button><a href="/tournamentHistory.html"class="button">Tournament History</a></button>
-        <button><a href="/aboutUs.html" class="button">About Us</a></button>
+        <button><a href="#/"class="button">Home</a></button>
+        <button><a href="#/upcomingTournaments.html"class="button" style="display:inline;">Upcoming Tournaments</a></button>
+        <button><a href="#/tournamentHistory.html"class="button">Tournament History</a></button>
+        <button><a href="#/aboutUs.html" class="button">About Us</a></button>
     </div>
     
     <br>
     <br>
     <br>
-    <button><a target="_blank" href="/1600final.html"class="button">U1600 Final Results</a></button>
-    <button><a target="_blank" href="/openfinal.html"class="button">Open Final Results</a></button>
-    <button><a target="_blank" href="/seniorfinal.html"class="button">Senior Final Results</a></button>
+    <button><a target="_blank" href="#/1600final.html"class="button">U1600 Final Results</a></button>
+    <button><a target="_blank" href="#/openfinal.html"class="button">Open Final Results</a></button>
+    <button><a target="_blank" href="#/seniorfinal.html"class="button">Senior Final Results</a></button>
     
     <div class="Footer" style="position:absolute; top:600px; left:10px; ">
         <p style="color:black; position:absolute; top:70px; left:130px; font-size:20px;">USCF Affiliate: A7790127</p>

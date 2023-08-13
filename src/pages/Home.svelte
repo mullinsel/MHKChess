@@ -15,17 +15,17 @@
         <!--<p style="color:black; position:absolute; top:130px; left:325px; font-size:30px;">Thursday 6pm-9pm and Sunday 6pm-9pm</p>--->
     </div>
     <div class = "Navigation bar">
-        <button><a href="/currentTournament.html" class="button">Current Tournament</a></button>
-        <button><a href="/upcomingTournaments.html"class="button" style="display:inline;">Upcoming Tournaments</a></button>
-        <button><a href="/tournamentHistory.html"class="button">Tournament History</a></button>
-        <button><a href="/aboutUs.html" class="button">About Us</a></button>
+        <button><a href="#/currentTournament.html" class="button">Current Tournament</a></button>
+        <button><a href="#/upcomingTournaments.html"class="button" style="display:inline;">Upcoming Tournaments</a></button>
+        <button><a href="#/tournamentHistory.html"class="button">Tournament History</a></button>
+        <button><a href="#/aboutUs.html" class="button">About Us</a></button>
     </div>
     <br>
     <br>
     <br>
-    <button><a href="/whatINeed.html" class="button">What do I need to play?</a></button>
+    <button><a href="#/whatINeed.html" class="button">What do I need to play?</a></button>
     <br>
-    <button><a href="/elo-perf-calc.html" class="button">Rating Calculator</a></button>
+    <button><a href="#/elo-perf-calc.html" class="button">Rating Calculator</a></button>
     <br>
     <br>
     <br>
