@@ -1,7 +1,7 @@
 <svelte:head>
 	<title>Current Tournament</title>
 </svelte:head>
-<div class="main">
+<div class="current-tournament">
     <div class = "Header">
         <img src="images/logo.png" alt="Club logo" style = "position:absolute; top:4px; left:30px;" width="225" height="190"/>
         <img src="images/white.png" alt="Header" width="980" height="200" style = "border: 1px solid black;"/>
@@ -45,12 +45,12 @@
         text-decoration: none;
         color: initial;
     }
-    .main {
+    .current-tournament {
             text-align: center;
             background-color: LightBlue;
             color: black;
     }
-    .main {
+    .current-tournament {
            height:620px;
            width:1023px;
            position:absolute;
