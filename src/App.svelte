@@ -12,18 +12,18 @@
     <Route path='/' component={Home}/>
     <Route path='/currentTournament.html' component={CurrentTournament}/>
     <Route path='/1600final.html' component={CurrentTournament}/>
-    <Route path='/AboutUs.html' component={CurrentTournament}/>
-    <Route path='/ClubPairings.html' component={CurrentTournament}/>
-    <Route path='/ClubStandings.html' component={CurrentTournament}/>
-    <Route path='/Donors.html' component={CurrentTournament}/>
-    <Route path='/EloPerfCalc.html' component={CurrentTournament}/>
-    <Route path='/Lessons.html' component={CurrentTournament}/>
-    <Route path='/OpenFinal.html' component={CurrentTournament}/>
-    <Route path='/RunningATournament.html' component={CurrentTournament}/>
-    <Route path='/SeniorFinal.html' component={CurrentTournament}/>
-    <Route path='/Template.html' component={CurrentTournament}/>
-    <Route path='/TournamentHistory.html' component={CurrentTournament}/>
-    <Route path='/UpcomingTournaments.html' component={CurrentTournament}/>
-    <Route path='/WhatINeed.html' component={CurrentTournament}/>
+    <Route path='/aboutUs.html' component={CurrentTournament}/>
+    <Route path='/clubPairings.html' component={CurrentTournament}/>
+    <Route path='/clubStandings.html' component={CurrentTournament}/>
+    <Route path='/donors.html' component={CurrentTournament}/>
+    <Route path='/elo-perf-calc.html' component={CurrentTournament}/>
+    <Route path='/lessons.html' component={CurrentTournament}/>
+    <Route path='/openfinal.html' component={CurrentTournament}/>
+    <Route path='/runningATournament.html' component={CurrentTournament}/>
+    <Route path='/seniorFinal.html' component={CurrentTournament}/>
+    <Route path='/template.html' component={CurrentTournament}/>
+    <Route path='/tournamentHistory.html' component={CurrentTournament}/>
+    <Route path='/upcomingTournaments.html' component={CurrentTournament}/>
+    <Route path='/whatINeed.html' component={CurrentTournament}/>
   </div>
 </Router>
