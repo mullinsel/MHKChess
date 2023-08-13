@@ -33,7 +33,7 @@
     <button><a href="http://www.kansaschess.org/"class="button">Kansas Chess Association</a></button>
     <br>
     <br>
-    <button><a href="donors.html" class="button">Donors List</a></button>
+    <button><a href="#/donors.html" class="button">Donors List</a></button>
     <br>
     <button><a href="https://www.paypal.com/donate/?hosted_button_id=N7BF4U2LKREKU&fbclid=IwAR335J2n6SALXAnVYFxivOOypj9-9tUcr5jPDWT-Rim7m26bN8yLFczjsTM" class="button">Donate to MHK Chess</a></button>
     <br>
