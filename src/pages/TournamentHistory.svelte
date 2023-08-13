@@ -1,51 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <style>
-        a.button {
-                -webkit-appearance: button;
-                -moz-appearance: button;
-                appearance: button;
-                height: 10px;
-                width: 200px;
-                font-size: 18px;
-                text-decoration: none;
-                color: initial;
-        }
-        body {
-                text-align: center;
-                background-color: LightBlue;
-                color: black;
-        }
-        body{
-           height:620px;
-           width:1023px;
-           position:absolute;
-           box-sizing:border-box;
-           transform-origin: 0 0;
-           -moz-transform-origin:0 0;
-           -o-transform-origin: 0 0;
-           -webkit-transform-origin: 0 0;
-        }
-        a:link {
-                color: black;
-                background-color: transparent;
-                text-decoration: underline;
-        }
-        a:visited {
-                color: black;
-                background-color: transparent;
-                text-decoration: underline;
-        }
-        a:active {
-                color: black;
-                background-color: transparent;
-        }
-    </style>
+<svelte:head>
     <title>Tournament History</title>
-</head>
-<body>
+</svelte:head>
+
+<div class="tournament-history">
 <div class = "Header">
     <img src="images/logo.png" alt="Club logo" style = "position:absolute; top:4px; left:30px;" width="225" height="190"/>
     <img src="images/white.png" alt="Header" width="980" height="200" style = "border: 1px solid black;"/>
@@ -117,5 +74,46 @@
     <img src="images/USCFlogo.png" alt="USCFlogo" style="position: absolute; top:22px; left:1px;" width="120" height="98"/>
     <img src="images/white.png" alt="Footerbg" width="980" height="100" style = "border: 1px solid black;"/>
 </div>
-</body>
-</html>
+</div>
+
+<style>
+    a.button {
+            -webkit-appearance: button;
+            -moz-appearance: button;
+            appearance: button;
+            height: 10px;
+            width: 200px;
+            font-size: 18px;
+            text-decoration: none;
+            color: initial;
+    }
+    .tournament-history {
+            text-align: center;
+            background-color: LightBlue;
+            color: black;
+    }
+    .tournament-history {
+       height:620px;
+       width:1023px;
+       position:absolute;
+       box-sizing:border-box;
+       transform-origin: 0 0;
+       -moz-transform-origin:0 0;
+       -o-transform-origin: 0 0;
+       -webkit-transform-origin: 0 0;
+    }
+    a:link {
+            color: black;
+            background-color: transparent;
+            text-decoration: underline;
+    }
+    a:visited {
+            color: black;
+            background-color: transparent;
+            text-decoration: underline;
+    }
+    a:active {
+            color: black;
+            background-color: transparent;
+    }
+</style>
