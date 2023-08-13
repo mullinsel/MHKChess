@@ -6,6 +6,10 @@ import AboutUs from './pages/AboutUs.svelte';
 import UpcomingTournaments from './pages/UpcomingTournaments.svelte';
 import TournamentHistory from './pages/TournamentHistory.svelte';
 import WhatINeed from './pages/WhatINeed.svelte';
+import ClubPairings from './pages/ClubPairings.svelte';
+import ClubStandings from './pages/ClubStandings.svelte';
+import OpenFinal from './pages/OpenFinal.svelte';
+import SeniorFinal from './pages/SeniorFinal.svelte';
 
 // Export the route definition object
 export default {
@@ -16,4 +20,8 @@ export default {
     '/upcomingTournaments.html': UpcomingTournaments,
     '/tournamentHistory.html': TournamentHistory,
     '/whatINeed.html': WhatINeed,
+    '/clubPairings.html': ClubPairings,
+    '/clubStandings.html': ClubStandings,
+    '/openfinal.html': OpenFinal,
+    '/seniorfinal.html': SeniorFinal,
 }
