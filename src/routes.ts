@@ -5,6 +5,7 @@ import U1600Final from './pages/U1600Final.svelte';
 import AboutUs from './pages/AboutUs.svelte';
 import UpcomingTournaments from './pages/UpcomingTournaments.svelte';
 import TournamentHistory from './pages/TournamentHistory.svelte';
+import WhatINeed from './pages/WhatINeed.svelte';
 
 // Export the route definition object
 export default {
@@ -14,4 +15,5 @@ export default {
     '/aboutUs.html': AboutUs,
     '/upcomingTournaments.html': UpcomingTournaments,
     '/tournamentHistory.html': TournamentHistory,
+    '/whatINeed.html': WhatINeed,
 }
