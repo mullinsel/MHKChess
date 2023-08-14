@@ -14,6 +14,7 @@ import Donors from './pages/Donors.svelte';
 import Lessons from './pages/Lessons.svelte';
 import RunningATournament from './pages/RunningATournament.svelte';
 import Template from './pages/Template.svelte'
+import EloPerfCalc from './pages/EloPerfCalc.svelte';
 
 // Export the route definition object
 export default {
@@ -32,4 +33,5 @@ export default {
     '/lessons.html': Lessons,
     '/runningATournament.html': RunningATournament,
     '/template.html': Template,
+    '/elo-perf-calc.html': EloPerfCalc,
 }
