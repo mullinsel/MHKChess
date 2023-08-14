@@ -120,10 +120,10 @@
         else if (norm == 6){
             display3 = 'LM norm';
         }
-        elif (norm == 7){
+        else if (norm == 7){
             display3 = 'LSM norm';
         }
-        elif (norm == 0){
+        else if (norm == 0){
             display3 = 'No norm';
         }
     }
