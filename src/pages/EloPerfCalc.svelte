@@ -11,7 +11,16 @@
     let Round5Opponent: number = 0;
     let display: number = 0;
     let display2: number = 0;
-    let display3: number = 0;
+    let display3: string = '0';
+    let Round1Opponentnorm: number = 0;
+    let Round2Opponentnorm: number = 0;
+    let Round3Opponentnorm: number = 0;
+    let Round4Opponentnorm: number = 0;
+    let Round5Opponentnorm: number = 0;
+    let NumberOfRoundsnorm: number;
+    let YourScorenorm: number;
+    let totalGamesnorm: number;
+
 
     function calcElo(){
         var R0 = CurrentElo;
@@ -49,9 +58,9 @@
     }
 
     function calcNorm() {
-        var Nrounds = Number(document.getElementById("NumberOfRoundsnorm").value);
-        var S = Number(document.getElementById("YourScorenorm").value);
-        const Ri = [document.getElementById("Round1Opponentnorm").value,document.getElementById("Round2Opponentnorm").value,document.getElementById("Round3Opponentnorm").value,document.getElementById("Round4Opponentnorm").value,document.getElementById("Round5Opponentnorm").value];
+        var Nrounds = NumberOfRoundsnorm;
+        var S = YourScorenorm;
+        const Ri = [Round1Opponentnorm, Round2Opponentnorm, Round3Opponentnorm, Round4Opponentnorm, Round5Opponentnorm];
         const normLevels = [1200,1400,1600,1800,2000,2200,2400];
         const delta = [];
         const CT = [];
@@ -94,28 +103,28 @@
             }
         }
         if (norm == 1){
-            document.getElementById("display3").value = '4th category norm';
+            display3 = '4th category norm';
         }
         else if (norm == 2){
-            document.getElementById("display3").value = '3rd category norm';
+            display3 = '3rd category norm';
         }
         else if (norm == 3){
-            document.getElementById("display3").value = '2nd category norm';
+            display3 = '2nd category norm';
         }
         else if (norm == 4){
-            document.getElementById("display3").value = '1st category norm';
+            display3 = '1st category norm';
         }
         else if (norm == 5){
-            document.getElementById("display3").value = 'CM norm';
+            display3 = 'CM norm';
         }
         else if (norm == 6){
-            document.getElementById("display3").value = 'LM norm';
+            display3 = 'LM norm';
         }
         elif (norm == 7){
-            document.getElementById("display3").value = 'LSM norm';
+            display3 = 'LSM norm';
         }
         elif (norm == 0){
-            document.getElementById("display3").value = 'No norm';
+            display3 = 'No norm';
         }
     }
 
@@ -180,20 +189,20 @@
     <br>
     <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color: black;">Norm Calculator</h2>
     <input name="CurrentElonorm" id="CurrentElonorm" type="text" placeholder="Your Current Rating" required>
-    <input name="NumberOfRoundsnorm" id = "NumberOfRoundsnorm" type="text" placeholder="Number Of Rounds" required>
-    <input name="YourScorenorm" id="YourScorenorm" type="text" placeholder="Your Score" required>
-    <input name="totalGamesnorm" id="totalGamesnorm" type="text" placeholder="Number of prior games" required>
+    <input bind:value={NumberOfRoundsnorm} name="NumberOfRoundsnorm" id = "NumberOfRoundsnorm" type="text" placeholder="Number Of Rounds" required>
+    <input bind:value={YourScorenorm} name="YourScorenorm" id="YourScorenorm" type="text" placeholder="Your Score" required>
+    <input bind:value={totalGamesnorm} name="totalGamesnorm" id="totalGamesnorm" type="text" placeholder="Number of prior games" required>
     <br>
     <br>
-    <input name="Round1Opponentnorm" id="Round1Opponentnorm" type="text" placeholder="Round 1 Opponent's Post Event Elo" value="0">
+    <input bind:value={Round1Opponentnorm} name="Round1Opponentnorm" id="Round1Opponentnorm" type="text" placeholder="Round 1 Opponent's Post Event Elo">
     <br>
-    <input name="Round2Opponentnorm" id="Round2Opponentnorm" type="text" placeholder="Round 2 Opponent's Post Event Elo" value="0">
+    <input bind:value={Round2Opponentnorm} name="Round2Opponentnorm" id="Round2Opponentnorm" type="text" placeholder="Round 2 Opponent's Post Event Elo">
     <br>
-    <input name="Round3Opponentnorm" id="Round3Opponentnorm" type="text" placeholder="Round 3 Opponent's Post Event Elo" value="0">
+    <input bind:value={Round3Opponentnorm} name="Round3Opponentnorm" id="Round3Opponentnorm" type="text" placeholder="Round 3 Opponent's Post Event Elo">
     <br>
-    <input name="Round4Opponentnorm" id="Round4Opponentnorm" type="text" placeholder="Round 4 Opponent's Post Event Elo" value="0">
+    <input bind:value={Round4Opponentnorm} name="Round4Opponentnorm" id="Round4Opponentnorm" type="text" placeholder="Round 4 Opponent's Post Event Elo">
     <br>
-    <input name="Round5Opponentnorm" id="Round5Opponentnorm" type="text" placeholder="Round 5 Opponent's Post Event Elo" value="0">
+    <input bind:value={Round5Opponentnorm} name="Round5Opponentnorm" id="Round5Opponentnorm" type="text" placeholder="Round 5 Opponent's Post Event Elo">
     <br>
     <button type="submit" onclick="calcNorm()">Calculate</button>
     <br>
