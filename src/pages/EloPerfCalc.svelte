@@ -180,7 +180,7 @@
     <br>
     <input bind:value={Round5Opponent} name="Round5Opponent" id="Round5Opponent" type="text" placeholder="Round 5 Opponent's Elo">
     <br>
-    <button type="submit" onclick="calcElo()">Calculate</button>
+    <button type="submit" on:click={calcElo}>Calculate</button>
     <br>
     <h2 style="color: black;">Your Calculated Elo</h2>
     <input bind:value={display} type = "text" name="display" id = "display" disabled>
@@ -204,7 +204,7 @@
     <br>
     <input bind:value={Round5Opponentnorm} name="Round5Opponentnorm" id="Round5Opponentnorm" type="text" placeholder="Round 5 Opponent's Post Event Elo">
     <br>
-    <button type="submit" onclick="calcNorm()">Calculate</button>
+    <button type="submit" on:click={calcNorm}>Calculate</button>
     <br>
     <h2 style="color: black;">Your Calculated Norm</h2>
     <input bind:value={display3} type = "text" name="display3" id = "display3" disabled>
