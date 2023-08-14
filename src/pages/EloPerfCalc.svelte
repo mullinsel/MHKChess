@@ -11,7 +11,7 @@
     let Round5Opponent: number = 0;
     let display: number = 0;
     let display2: number = 0;
-    let display3: string = '0';
+    let display3: string = '';
     let Round1Opponentnorm: number = 0;
     let Round2Opponentnorm: number = 0;
     let Round3Opponentnorm: number = 0;
@@ -78,10 +78,10 @@
                 if (delta[i][j] <= -400){
                     CT[i][j] = 0;
                 }
-                else if (-400 < delta[i][j] <= 0){
+                else if (-400 < delta[i][j] && delta[i][j] <= 0){
                     CT[i][j]=0.5+delta[i][j]/800;
                 }
-                else if (0 < delta[i][j] <= 200){
+                else if (0 < delta[i][j] && delta[i][j] <= 200){
                     CT[i][j]=0.5+delta[i][j]/400;
                 }
                 else if (200 < delta[j][i]){
@@ -135,8 +135,6 @@
     function bonus(a,b){
         return (a+b+Math.abs(a-b))/2;
     }
-
-    
 </script>
 
 <svelte:head>    
