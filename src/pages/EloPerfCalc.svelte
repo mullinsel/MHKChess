@@ -1,5 +1,53 @@
 
 <script lang="ts">
+    let CurrentElo: number;
+    let NumberOfRounds: number;
+    let totalGames: number;
+    let YourScore: number;
+    let Round1Opponent: number = 0;
+    let Round2Opponent: number = 0;
+    let Round3Opponent: number = 0;
+    let Round4Opponent: number = 0;
+    let Round5Opponent: number = 0;
+    let display: number = 0;
+    let display2: number = 0;
+    let display3: number = 0;
+
+    function calcElo(){
+        var R0 = CurrentElo;
+        var Nrounds = NumberOfRounds;
+        var N = totalGames;
+        var S = YourScore;
+        var Nstar = Math.round(50/(Math.sqrt(0.662+0.00000739*(2569-R0)*(2569-R0))));
+        var Nprime = 0;
+        if (Nstar < N){
+            Nprime=Nstar;
+        }
+        else{
+            Nprime=N;
+        }
+        var K = 800/(Nprime+Nrounds);
+        const Ri = [Round1Opponent, Round2Opponent, Round3Opponent, Round4Opponent, Round5Opponent];
+        var Efinal = 0;
+        var Ra = 0;
+        for (let i = 0; i < Nrounds; i++) {
+            if (Ri[i]!=0){
+                Efinal += W(R0,Ri[i]);
+            }
+        }
+        for (let i = 0; i < Nrounds; i++) {
+            if (Ri[i]!=0){
+                Ra += Ri[i];
+            }
+        }
+        var stepone = K*(S-Efinal)-14*Math.sqrt(bonus(Nrounds,4));
+        var steptwo = bonus(0,stepone);
+        var Rs = R0 + K*(S-Efinal)+steptwo;
+        display = Math.round(Rs);
+        var perfR = (Ra/Nrounds) + (400*(S-(Nrounds-S)))/(Nrounds)
+        display2 = perfR;
+    }
+
     function calcNorm() {
         var Nrounds = Number(document.getElementById("NumberOfRoundsnorm").value);
         var S = Number(document.getElementById("YourScorenorm").value);
@@ -79,40 +127,7 @@
         return (a+b+Math.abs(a-b))/2;
     }
 
-    function calcElo(){
-        var R0 = Number(document.getElementById("CurrentElo").value);
-        var Nrounds = Number(document.getElementById("NumberOfRounds").value);
-        var N = Number(document.getElementById("totalGames").value);
-        var S = Number(document.getElementById("YourScore").value);
-        var Nstar = Math.round(50/(Math.sqrt(0.662+0.00000739*(2569-R0)*(2569-R0))));
-        var Nprime = 0;
-        if (Nstar < N){
-            Nprime=Nstar;
-        }
-        else{
-            Nprime=N;
-        }
-        var K = 800/(Nprime+Nrounds);
-        const Ri = [document.getElementById("Round1Opponent").value,document.getElementById("Round2Opponent").value,document.getElementById("Round3Opponent").value,document.getElementById("Round4Opponent").value,document.getElementById("Round5Opponent").value];
-        var Efinal = 0;
-        var Ra = 0;
-        for (let i = 0; i < Nrounds; i++) {
-            if (Ri[i]!=0){
-                Efinal += W(R0,Ri[i]);
-            }
-        }
-        for (let i = 0; i < Nrounds; i++) {
-            if (Ri[i]!=0){
-                Ra += Ri[i];
-            }
-        }
-        var stepone = K*(S-Efinal)-14*Math.sqrt(bonus(Nrounds,4));
-        var steptwo = bonus(0,stepone);
-        var Rs = R0 + K*(S-Efinal)+steptwo;
-        document.getElementById("display").value = Math.round(Rs);
-        var perfR = (Ra/Nrounds) + (400*(S-(Nrounds-S)))/(Nrounds)
-        document.getElementById("display2").value = perfR;
-    }
+    
 </script>
 
 <svelte:head>    
@@ -140,28 +155,28 @@
     <br>
     <br>
     <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color: black;">Elo Calculator</h2>
-    <input name="CurrentElo" id="CurrentElo" type="text" placeholder="Your Current Rating" required>
-    <input name="NumberOfRounds" id = "NumberOfRounds" type="text" placeholder="Number Of Rounds" required>
-    <input name="YourScore" id="YourScore" type="text" placeholder="Your Score" required>
-    <input name="totalGames" id="totalGames" type="text" placeholder="Number of prior games" required>
+    <input bind:value={CurrentElo} name="CurrentElo" id="CurrentElo" type="text" placeholder="Your Current Rating" required>
+    <input bind:value={NumberOfRounds} name="NumberOfRounds" id = "NumberOfRounds" type="text" placeholder="Number Of Rounds" required>
+    <input bind:value={YourScore} name="YourScore" id="YourScore" type="text" placeholder="Your Score" required>
+    <input bind:value={totalGames} name="totalGames" id="totalGames" type="text" placeholder="Number of prior games" required>
     <br>
     <br>
-    <input name="Round1Opponent" id="Round1Opponent" type="text" placeholder="Round 1 Opponent's Elo" value="0">
+    <input bind:value={Round1Opponent} name="Round1Opponent" id="Round1Opponent" type="text" placeholder="Round 1 Opponent's Elo">
     <br>
-    <input name="Round2Opponent" id="Round2Opponent" type="text" placeholder="Round 2 Opponent's Elo" value="0">
+    <input bind:value={Round2Opponent} name="Round2Opponent" id="Round2Opponent" type="text" placeholder="Round 2 Opponent's Elo">
     <br>
-    <input name="Round3Opponent" id="Round3Opponent" type="text" placeholder="Round 3 Opponent's Elo" value="0">
+    <input bind:value={Round3Opponent} name="Round3Opponent" id="Round3Opponent" type="text" placeholder="Round 3 Opponent's Elo">
     <br>
-    <input name="Round4Opponent" id="Round4Opponent" type="text" placeholder="Round 4 Opponent's Elo" value="0">
+    <input bind:value={Round4Opponent} name="Round4Opponent" id="Round4Opponent" type="text" placeholder="Round 4 Opponent's Elo">
     <br>
-    <input name="Round5Opponent" id="Round5Opponent" type="text" placeholder="Round 5 Opponent's Elo" value="0">
+    <input bind:value={Round5Opponent} name="Round5Opponent" id="Round5Opponent" type="text" placeholder="Round 5 Opponent's Elo">
     <br>
     <button type="submit" onclick="calcElo()">Calculate</button>
     <br>
     <h2 style="color: black;">Your Calculated Elo</h2>
-    <input type = "text" name="display" id = "display" value="0" disabled>
+    <input bind:value={display} type = "text" name="display" id = "display" disabled>
     <h2 style="color: black;">Your Performance Rating</h2>
-    <input type = "text" name="display2" id = "display2" value="0" disabled>
+    <input bind:value={display2} type = "text" name="display2" id = "display2" disabled>
     <br>
     <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color: black;">Norm Calculator</h2>
     <input name="CurrentElonorm" id="CurrentElonorm" type="text" placeholder="Your Current Rating" required>
@@ -183,7 +198,7 @@
     <button type="submit" onclick="calcNorm()">Calculate</button>
     <br>
     <h2 style="color: black;">Your Calculated Norm</h2>
-    <input type = "text" name="display3" id = "display3" value="0" disabled>
+    <input bind:value={display3} type = "text" name="display3" id = "display3" disabled>
     <br>
     <br>
     <div class="Footer" style="position:absolute; top:1000px; left:10px; ">
