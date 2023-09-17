@@ -17,6 +17,7 @@
   import RunningATournament from './pages/RunningATournament.svelte';
   import Template from './pages/Template.svelte'
   import EloPerfCalc from './pages/EloPerfCalc.svelte';
+  import OpenR1 from './pages/OpenR1.svelte';
 
   const routes = {
       '/': Home,
@@ -35,6 +36,7 @@
       '/runningATournament.html': RunningATournament,
       '/template.html': Template,
       '/elo-perf-calc.html': EloPerfCalc,
+      '/openR1.html': OpenR1,
   }
 </script>
 
