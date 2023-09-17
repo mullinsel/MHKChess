@@ -18,6 +18,16 @@
   import Template from './pages/Template.svelte'
   import EloPerfCalc from './pages/EloPerfCalc.svelte';
   import OpenR1 from './pages/OpenR1.svelte';
+  import OpenR2 from './pages/OpenR2.svelte';
+  import OpenResults_v2 from './pages/OpenResults_v2.svelte';
+  import OpenResults from './pages/OpenResults.svelte';
+  import U1400R1 from './pages/U1400R1.svelte'
+  import U1400R2_v2 from './pages/U1400R2_v2.svelte'
+  import U1400R2 from './pages/U1400R2.svelte'
+  import U1400R3 from './pages/U1400R3.svelte'
+  import U1400Results_v2 from './pages/U1400Results_v2.svelte'
+  import U1400Results from './pages/U1400Results.svelte'
+
 
   const routes = {
       '/': Home,
@@ -37,6 +47,15 @@
       '/template.html': Template,
       '/elo-perf-calc.html': EloPerfCalc,
       '/openR1.html': OpenR1,
+      '/openR2.html': OpenR2,
+      '/openresults_v2.html': OpenResults_v2,
+      '/openresults.html': OpenResults,
+      '/u1400R1.html': U1400R1,
+      '/u1400R2_v2.html': U1400R2_v2,
+      '/u1400R2.html': U1400R2,
+      '/u1400R3.html': U1400R3,
+      '/u1400results_v2.html': U1400Results_v2,
+      '/u1400results.html': U1400Results,
   }
 </script>
 
