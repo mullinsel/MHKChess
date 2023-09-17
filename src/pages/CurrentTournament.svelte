@@ -23,8 +23,8 @@
     <br>
     <br>
     <h2>MHK Back To School Tournament</h2>
-    <button><a target="_blank" href="/u1400results_v2.html"class="button">U1400 Results</a></button>
-    <button><a target="_blank" href="/openresults_v2.html"class="button">Open Results</a></button>
+    <button><a target="_blank" href="#/u1400results_v2.html"class="button">U1400 Results</a></button>
+    <button><a target="_blank" href="#/openresults_v2.html"class="button">Open Results</a></button>
 
     
     <div class="Footer" style="position:absolute; top:600px; left:10px; ">
