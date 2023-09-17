@@ -22,9 +22,10 @@
     <br>
     <br>
     <br>
-    <button><a target="_blank" href="#/1600final.html"class="button">U1600 Final Results</a></button>
-    <button><a target="_blank" href="#/openfinal.html"class="button">Open Final Results</a></button>
-    <button><a target="_blank" href="#/seniorfinal.html"class="button">Senior Final Results</a></button>
+    <h2>MHK Back To School Tournament</h2>
+    <button><a target="_blank" href="/u1400results_v2.html"class="button">U1400 Results</a></button>
+    <button><a target="_blank" href="/openresults_v2.html"class="button">Open Results</a></button>
+
     
     <div class="Footer" style="position:absolute; top:600px; left:10px; ">
         <p style="color:black; position:absolute; top:70px; left:130px; font-size:20px;">USCF Affiliate: A7790127</p>

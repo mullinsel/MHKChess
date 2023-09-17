@@ -32,6 +32,7 @@
 <br>
 <br>
 <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color:black;">Pawn Level Donors <br> (25 Dollars) </h2>
+<h3 style="color:black;">Andrew McCready</h3>
 
 <div class="Footer" style="position:absolute; top:800px; left:10px; ">
     <p style="color:black; position:absolute; top:70px; left:130px; font-size:20px;">USCF Affiliate: A7790127</p>

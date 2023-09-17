@@ -25,10 +25,16 @@
 <br>
 <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black;">Prize Tournaments</h2>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202305217832-30543972" class="button">Manhattan Open and Kansas Senior Championship 2023 (Guy Coffee Memorial) </a></h4>
+<h4><a href="https://www.uschess.org/msa/XtblMain.php?202308263222-30543972" class="button">MHK Back To School Tournament </a></h4>
+
 <br>
 <br>
 <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black;">Club Night Tournaments</h2>
 <h4><a href="https://docs.google.com/spreadsheets/d/1BF9-v2nxsVGppqN8Jkk4_nFox_zaBU8ihNH6qsxRZWE/edit?usp=sharing" class="button">Club Night League Standings</a></h4>
+<h4><a href="https://www.uschess.org/msa/XtblMain.php?202308314182-30543972" class="button">Club Night 8/31/23</a></h4>
+<h4><a href="http://www.uschess.org/msa/XtblMain.php?202308240112" class="button">Club Night 8/24/23</a></h4>
+<h4><a href="https://www.uschess.org/msa/XtblMain.php?202308177452-15398493" class="button">Club Night 8/17/23</a></h4>
+<h4><a href="https://www.uschess.org/msa/XtblMain.php?202308102032-30543972" class="button">Blitz Night 8/10/23</a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202308038482-30543972" class="button">Club Night 8/3/23</a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202307274692-30543972" class="button">Club Night 7/27/23</a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202307200572-30543972" class="button">Club Night 7/20/23</a></h4>
@@ -68,7 +74,7 @@
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202308038572-30558709"class="button">MHK Match 8/3/23</a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202306257022-17076527"class="button">Sunday Match 6/25/23</a></h4>
 
-<div class="Footer" style="position:absolute; top:2300px; left:10px; ">
+<div class="Footer" style="position:absolute; top:2500px; left:10px; ">
     <p style="color:black; position:absolute; top:70px; left:130px; font-size:20px;">USCF Affiliate: A7790127</p>
     <h2><a href="mailto:mullinsel93@gmail.com" style="position:absolute; top:85px; left:850px; border:2px solid; text-align:center; margin: 0px; font-size:20px;">Contact Us</a></h2>
     <img src="images/USCFlogo.png" alt="USCFlogo" style="position: absolute; top:22px; left:1px;" width="120" height="98"/>

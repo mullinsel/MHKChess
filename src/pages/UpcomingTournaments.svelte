@@ -23,7 +23,6 @@
     </div>
     <br>
     <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black;">Prize Tournaments</h2>
-    <button><a href="https://www.kingregistration.com/event/BackToSchool" class="button">MHK Back To School Tournament</a></button>
 
     <br>
     <br>
@@ -38,7 +37,6 @@
     <br>
     <br>
     <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black;">Other Tournaments in the area</h2>
-    <button><a href="https://www.kingregistration.com/event/TopekaLibrary080523" class="button">Topeka Library 8/5/23</a></button>
 
     <br>
     <br>
