@@ -41,7 +41,7 @@
 <br>
 <br>
 <br>
-<Footer />
+<Footer top={800}/>
 </div>
 
 <style>

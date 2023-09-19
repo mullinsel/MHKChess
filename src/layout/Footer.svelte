@@ -1,4 +1,8 @@
-<div class="Footer" style="position:absolute; top:600px; left:10px; ">
+<script>
+    export let top = 600;
+</script>
+
+<div class="Footer" style={`position:absolute; top:${top}px; left:10px;`}>
     <p style="color:black; position:absolute; top:70px; left:130px; font-size:20px;">USCF Affiliate: A7790127</p>
     <h2><a href="mailto:mullinsel93@gmail.com" style="position:absolute; top:85px; left:850px; border:2px solid; text-align:center; margin: 0px; font-size:20px;">Contact Us</a></h2>
     <img src="images/USCFlogo.png" alt="USCFlogo" style="position: absolute; top:22px; left:1px;" width="120" height="98"/>

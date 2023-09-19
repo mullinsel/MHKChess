@@ -59,7 +59,7 @@
     </form>
     <br>
     <br>
-    <Footer />
+    <Footer top={1000}/>
 </div>
 
 <style>

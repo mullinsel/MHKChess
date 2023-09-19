@@ -43,7 +43,7 @@
 <button><a target="_blank" href="https://www.amazon.com/Chess-Federation-Supreme-Triple-Weighted/dp/B076H9QZYR/ref=sr_1_40?keywords=chess%2Bset%2Bfor%2Btournament&qid=1687521321&sprefix=chess%2Bset%2Bfor%2Btourn%2Caps%2C112&sr=8-40&th=1" class="button">Recommended chess set</a></button>
 <button><a target="_blank"href="https://www.amazon.com/Chess-Armory-Digital-Clock/dp/B07YVMBL8P/ref=pd_bxgy_vft_med_img_sccl_1/143-0462828-0617504?pd_rd_w=oVYxU&content-id=amzn1.sym.26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_p=26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_r=1S7STCS44ABCW7P0703Q&pd_rd_wg=Lv4tf&pd_rd_r=4eecd17a-dcf5-47ee-bbf8-daa8885db3b0&pd_rd_i=B07YVMBL8P&psc=1" class="button">Recommended clock</a></button>
 
-<Footer />
+<Footer top={1000}/>
 </div>
 
 <style>

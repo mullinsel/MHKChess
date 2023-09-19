@@ -38,7 +38,7 @@
     <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color:black;">Pawn Level Donors <br> (25 Dollars) </h2>
     <h3 style="color:black;">Andrew McCready</h3>
 
-    <Footer />
+    <Footer top={800}/>
 </div>
 
 <style>

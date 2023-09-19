@@ -210,7 +210,7 @@
     <input bind:value={display3} type = "text" name="display3" id = "display3" disabled>
     <br>
     <br>
-    <Footer />
+    <Footer top={1000}/>
 </div>
 
 <style>

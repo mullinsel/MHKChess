@@ -78,7 +78,7 @@
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202308038572-30558709"class="button">MHK Match 8/3/23</a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202306257022-17076527"class="button">Sunday Match 6/25/23</a></h4>
 
-<Footer />
+<Footer top={2500}/>
 </div>
 
 <style>
