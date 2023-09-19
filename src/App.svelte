@@ -44,18 +44,9 @@
       '/donors': Donors,
       '/lessons': Lessons,
       '/runningATournament': RunningATournament,
-      '/template': Template,
       '/elo-perf-calc': EloPerfCalc,
-      '/openR1': OpenR1,
-      '/openR2': OpenR2,
       '/openresults_v2': OpenResults_v2,
-      '/openresults': OpenResults,
-      '/u1400R1': U1400R1,
-      '/u1400R2_v2': U1400R2_v2,
-      '/u1400R2': U1400R2,
-      '/u1400R3': U1400R3,
       '/u1400results_v2': U1400Results_v2,
-      '/u1400results': U1400Results,
   }
 </script>
 
