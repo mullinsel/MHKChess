@@ -14,17 +14,17 @@
     
     <div class = "Navigation bar">
         <button><a href="#/"class="button">Home</a></button>
-        <button><a href="#/upcomingTournaments.html"class="button" style="display:inline;">Upcoming Tournaments</a></button>
-        <button><a href="#/tournamentHistory.html"class="button">Tournament History</a></button>
-        <button><a href="#/aboutUs.html" class="button">About Us</a></button>
+        <button><a href="#/upcomingTournaments"class="button" style="display:inline;">Upcoming Tournaments</a></button>
+        <button><a href="#/tournamentHistory"class="button">Tournament History</a></button>
+        <button><a href="#/aboutUs" class="button">About Us</a></button>
     </div>
     
     <br>
     <br>
     <br>
     <h2>MHK Back To School Tournament</h2>
-    <button><a target="_blank" href="#/u1400results_v2.html"class="button">U1400 Results</a></button>
-    <button><a target="_blank" href="#/openresults_v2.html"class="button">Open Results</a></button>
+    <button><a target="_blank" href="#/u1400results_v2"class="button">U1400 Results</a></button>
+    <button><a target="_blank" href="#/openresults_v2"class="button">Open Results</a></button>
 
     
     <div class="Footer" style="position:absolute; top:600px; left:10px; ">

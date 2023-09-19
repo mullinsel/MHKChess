@@ -17,9 +17,9 @@
 
 <div class = "Navigation bar">
     <button><a href="#/"class="button">Home</a></button>
-    <button><a href="#/currentTournament.html" class="button">Current Tournament</a></button>
-    <button><a href="#/upcomingTournaments.html"class="button" style="display:inline;">Upcoming Tournaments</a></button>
-    <button><a href="#/aboutUs.html" class="button">About Us</a></button>
+    <button><a href="#/currentTournament" class="button">Current Tournament</a></button>
+    <button><a href="#/upcomingTournaments"class="button" style="display:inline;">Upcoming Tournaments</a></button>
+    <button><a href="#/aboutUs" class="button">About Us</a></button>
 </div>
 <br>
 <br>

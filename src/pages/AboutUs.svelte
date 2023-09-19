@@ -17,9 +17,9 @@
     
     <div class = "Navigation bar">
         <button><a href="#/" class="button">Home</a></button>
-        <button><a href="#/currentTournament.html" class="button">Current Tournament</a></button>
-        <button><a href="#/upcomingTournaments.html"class="button" style="display:inline;">Upcoming Tournaments</a></button>
-        <button><a href="#/tournamentHistory.html"class="button">Tournament History</a></button>
+        <button><a href="#/currentTournament" class="button">Current Tournament</a></button>
+        <button><a href="#/upcomingTournaments"class="button" style="display:inline;">Upcoming Tournaments</a></button>
+        <button><a href="#/tournamentHistory"class="button">Tournament History</a></button>
     </div>
     
     <br>
@@ -33,7 +33,7 @@
     <p style="color:black">We are a group of people who love to play chess in Manhattan Kansas.
         We aim to promote chess in the community though providing equipment, teaching, and hosting events.
         Come join us at one of our events. All skill levels and ages are welcome.</p>
-    <button><a href="#/donors.html" class="button">Donors List</a></button>
+    <button><a href="#/donors" class="button">Donors List</a></button>
     <br>
     <br>
     <button><a href="https://docs.google.com/spreadsheets/d/1U98BTKdcGr9xsiLMIy51R60DM2GyIqP35VEmo4A07Ig/edit?usp=sharing" class="button">MHK Chess financial logs</a></button>

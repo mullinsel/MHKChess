@@ -11,10 +11,10 @@
 <a target="_blank" href ="https://www.flickr.com/photos/198250331@N07/"> <img src="images/flickerlogo.png" style="position:absolute; top:100px; left:900px" alt="Flicker Logo" width="80" height="40"/></a>
 <a target="_blank" href = "https://www.facebook.com/Manhattanhessclub"><img src="images/fblogo.png" style="position:absolute; top:50px; left:940px" alt="Facebook Logo" width="40" height="40"/></a>
 <button><a href="#/" class="button">Home</a></button>
-<button><a href="#/currentTournament.html" class="button">Current Tournament</a></button>
-<button><a href="#/upcomingTournaments.html"class="button" style="display:inline;">Upcoming Tournaments</a></button>
-<button><a href="#/tournamentHistory.html"class="button">Tournament History</a></button>
-<button><a href="#/aboutUs.html" class="button">About Us</a></button>
+<button><a href="#/currentTournament" class="button">Current Tournament</a></button>
+<button><a href="#/upcomingTournaments"class="button" style="display:inline;">Upcoming Tournaments</a></button>
+<button><a href="#/tournamentHistory"class="button">Tournament History</a></button>
+<button><a href="#/aboutUs" class="button">About Us</a></button>
 
 <p style="color:black"> Here are instructions on how to run your own chess tournament.
 <br> First, you will need to access to your clubs authorized affiliate or register your own club as an affiliate.</p>

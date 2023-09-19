@@ -14,10 +14,10 @@
 </div>
 
 <div class = "Navigation bar">
-    <button><a href="#/currentTournament.html" class="button">Current Tournament</a></button>
-    <button><a href="#/upcomingTournaments.html"class="button" style="display:inline;">Upcoming Tournaments</a></button>
-    <button><a href="#/tournamentHistory.html"class="button">Tournament History</a></button>
-    <button><a href="#/aboutUs.html" class="button">About Us</a></button>
+    <button><a href="#/currentTournament" class="button">Current Tournament</a></button>
+    <button><a href="#/upcomingTournaments"class="button" style="display:inline;">Upcoming Tournaments</a></button>
+    <button><a href="#/tournamentHistory"class="button">Tournament History</a></button>
+    <button><a href="#/aboutUs" class="button">About Us</a></button>
 </div>
 <br>
 <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color:black;">King Level Donors <br> (100 Dollars) </h2>
