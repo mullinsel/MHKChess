@@ -15,7 +15,7 @@
   import Donors from './pages/Donors.svelte';
   import Lessons from './pages/Lessons.svelte';
   import RunningATournament from './pages/RunningATournament.svelte';
-  import Template from './pages/Template.svelte'
+  import Template from './layout/Template.svelte'
   import EloPerfCalc from './pages/EloPerfCalc.svelte';
   import OpenR1 from './pages/OpenR1.svelte';
   import OpenR2 from './pages/openR2.svelte';
