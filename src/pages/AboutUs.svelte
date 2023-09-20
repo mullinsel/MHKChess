@@ -16,7 +16,6 @@
         <a target="_blank" href = "https://www.facebook.com/Manhattanhessclub"><img src="images/fblogo.png" style="position:absolute; top:50px; left:940px" alt="Facebook Logo" width="40" height="40"/></a>
         <p style="color:black; position:absolute; top:100px; left:275px; font-size:30px;">Thursdays and Sundays 5pm</p>
         <p style="color:black; position:absolute; top:130px; left:275px; font-size:30px;">at UFM Community Learning Center</p>
-        <!--<p style="color:black; position:absolute; top:130px; left:325px; font-size:30px;">Thursday 6pm-9pm and Sunday 6pm-9pm</p>--->
     </div>
     
     <div class = "Navigation bar">
