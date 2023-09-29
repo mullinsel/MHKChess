@@ -1,17 +1,12 @@
-<script>
-    import Footer from "../layout/Footer.svelte";
-
-</script>
-
 <svelte:head>
-    <title>Lessons</title>
+    <title>Template</title>
 </svelte:head>
 
-<div class="lessons">
+<div class="template">
 <div class = "Header">
     <img src="images/logo.png" alt="Club logo" style = "position:absolute; top:4px; left:30px;" width="225" height="190"/>
     <img src="images/white.png" alt="Header" width="980" height="200" style = "border: 1px solid black;"/>
-    <p style="color:black; position:absolute; top:-20px; left:275px; font-size:80px;">Lessons</p>
+    <p style="color:black; position:absolute; top:-20px; left:275px; font-size:80px;">MHK Chess Club</p>
     <a target="_blank" href ="https://www.chess.com/clubs/members/manhattan-chess"> <img src="images/chess.png" style="position:absolute; top:150px; left:880px" alt="Chess Logo" width="100" height="40"/></a>
     <a target="_blank" href ="https://www.flickr.com/photos/198250331@N07/"> <img src="images/flickerlogo.png" style="position:absolute; top:100px; left:900px" alt="Flicker Logo" width="80" height="40"/></a>
     <a target="_blank" href = "https://www.facebook.com/Manhattanhessclub"><img src="images/fblogo.png" style="position:absolute; top:50px; left:940px" alt="Facebook Logo" width="40" height="40"/></a>
@@ -19,30 +14,23 @@
 </div>
 
 <div class = "Navigation bar">
-    <button><a href="#/currentTournament" class="button">Current Tournament</a></button>
-    <button><a href="#/upcomingTournaments"class="button" style="display:inline;">Upcoming Tournaments</a></button>
-    <button><a href="#/tournamentHistory"class="button">Tournament History</a></button>
-    <button><a href="#/aboutUs" class="button">About Us</a></button>
+    <button><a href="#/currentTournament.html" class="button">Current Tournament</a></button>
+    <button><a href="#/upcomingTournaments.html"class="button" style="display:inline;">Upcoming Tournaments</a></button>
+    <button><a href="#/tournamentHistory.html"class="button">Tournament History</a></button>
+    <button><a href="#/aboutUs.html" class="button">About Us</a></button>
 </div>
 <br>
 <br>
-<div class = "Instructors">
-    <h2 style="color: black; background: white; margin: 10px; padding: 10px; border: 1px solid black;">Instructors</h2>
-    <br>
-    <br>
-    <br>
+<br>
+<br>
+<br>
 
-    <img src="images/johndrippe.png" alt="johndrippe" width="220" height="240"/>
-    <h2 style="color: black;">John Drippe</h2>
-    <button><a href="https://www.uschess.org/msa/MbrDtlMain.php?17076527" class="button">US Chess Federation</a></button>
-    <button><a href="https://ratings.fide.com/profile/30977231" class="button">FIDE</a></button>
+<div class="Footer" style="position:absolute; top:600px; left:10px; ">
+    <p style="color:black; position:absolute; top:70px; left:130px; font-size:20px;">USCF Affiliate: A7790127</p>
+    <h2><a href="mailto:mullinsel93@gmail.com" style="position:absolute; top:85px; left:850px; border:2px solid; text-align:center; margin: 0px; font-size:20px;">Contact Us</a></h2>
+    <img src="images/USCFlogo.png" alt="USCFlogo" style="position: absolute; top:22px; left:1px;" width="120" height="98"/>
+    <img src="images/white.png" alt="Footerbg" width="980" height="100" style = "border: 1px solid black;"/>
 </div>
-
-
-<br>
-<br>
-<br>
-<Footer top={800}/>
 </div>
 
 <style>
@@ -56,12 +44,12 @@
         text-decoration: none;
         color: initial;
     }
-    .lessons {
+    .template {
             text-align: center;
             background-color: LightBlue;
             color: white;
     }
-    .lessons {
+    .template {
        height:620px;
        width:1023px;
        position:absolute;

@@ -1,7 +1,6 @@
 <script lang='ts'>
     import Footer from "../layout/Footer.svelte";
 
-
 </script>
 
 <div class="home">

@@ -2,6 +2,7 @@
     import Footer from "../layout/Footer.svelte";
 
 </script>
+
 <svelte:head>    
     <title>Donors</title>
 </svelte:head>
