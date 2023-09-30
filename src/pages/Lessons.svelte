@@ -2,7 +2,6 @@
     import Footer from "../layout/Footer.svelte";
 
 </script>
-
 <svelte:head>
     <title>Lessons</title>
 </svelte:head>

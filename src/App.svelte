@@ -13,6 +13,7 @@
   import EloPerfCalc from './pages/EloPerfCalc.svelte';
   import OpenResults_v2 from './pages/openresults_v2.svelte';
   import U1400Results_v2 from './pages/u1400results_v2.svelte'
+  import GlobalStyle from './GlobalStyle.svelte';
 
 
   const routes = {
@@ -31,5 +32,7 @@
   }
 </script>
 
-<Router {routes} />
+<GlobalStyle>
+  <Router {routes} />
+</GlobalStyle>
 
