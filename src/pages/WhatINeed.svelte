@@ -1,3 +1,7 @@
+<script>
+    import Footer from "../layout/Footer.svelte";
+
+</script>
 <svelte:head>
     <title>What do I need?</title>
 </svelte:head>
@@ -17,10 +21,10 @@
 
 <div class = "Navigation bar">
     <button><a href="#/" class="button">Home</a></button>
-    <button><a href="#/currentTournament.html" class="button">Current Tournament</a></button>
-    <button><a href="#/upcomingTournaments.html"class="button" style="display:inline;">Upcoming Tournaments</a></button>
-    <button><a href="#/tournamentHistory.html"class="button">Tournament History</a></button>
-    <button><a href="#/aboutUs.html" class="button">About Us</a></button>
+    <button><a href="#/currentTournament" class="button">Current Tournament</a></button>
+    <button><a href="#/upcomingTournaments"class="button" style="display:inline;">Upcoming Tournaments</a></button>
+    <button><a href="#/tournamentHistory"class="button">Tournament History</a></button>
+    <button><a href="#/aboutUs" class="button">About Us</a></button>
 </div>
 
 <br>
@@ -39,12 +43,7 @@
 <button><a target="_blank" href="https://www.amazon.com/Chess-Federation-Supreme-Triple-Weighted/dp/B076H9QZYR/ref=sr_1_40?keywords=chess%2Bset%2Bfor%2Btournament&qid=1687521321&sprefix=chess%2Bset%2Bfor%2Btourn%2Caps%2C112&sr=8-40&th=1" class="button">Recommended chess set</a></button>
 <button><a target="_blank"href="https://www.amazon.com/Chess-Armory-Digital-Clock/dp/B07YVMBL8P/ref=pd_bxgy_vft_med_img_sccl_1/143-0462828-0617504?pd_rd_w=oVYxU&content-id=amzn1.sym.26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_p=26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_r=1S7STCS44ABCW7P0703Q&pd_rd_wg=Lv4tf&pd_rd_r=4eecd17a-dcf5-47ee-bbf8-daa8885db3b0&pd_rd_i=B07YVMBL8P&psc=1" class="button">Recommended clock</a></button>
 
-<div class="Footer" style="position:absolute; top:1000px; left:10px; ">
-    <p style="color:black; position:absolute; top:70px; left:130px; font-size:20px;">USCF Affiliate: A7790127</p>
-    <h2><a href="mailto:mullinsel93@gmail.com" style="position:absolute; top:85px; left:850px; border:2px solid; text-align:center; margin: 0px; font-size:20px;">Contact Us</a></h2>
-    <img src="images/USCFlogo.png" alt="USCFlogo" style="position: absolute; top:22px; left:1px;" width="120" height="98"/>
-    <img src="images/white.png" alt="Footerbg" width="980" height="100" style = "border: 1px solid black;"/>
-</div>
+<Footer top={1000}/>
 </div>
 
 <style>

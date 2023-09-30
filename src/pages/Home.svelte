@@ -1,4 +1,5 @@
 <script lang='ts'>
+    import Footer from "../layout/Footer.svelte";
 
 </script>
 
@@ -15,17 +16,17 @@
         <!--<p style="color:black; position:absolute; top:130px; left:325px; font-size:30px;">Thursday 6pm-9pm and Sunday 6pm-9pm</p>--->
     </div>
     <div class = "Navigation bar">
-        <button><a href="#/currentTournament.html" class="button">Current Tournament</a></button>
-        <button><a href="#/upcomingTournaments.html"class="button" style="display:inline;">Upcoming Tournaments</a></button>
-        <button><a href="#/tournamentHistory.html"class="button">Tournament History</a></button>
-        <button><a href="#/aboutUs.html" class="button">About Us</a></button>
+        <button><a href="#/currentTournament" class="button">Current Tournament</a></button>
+        <button><a href="#/upcomingTournaments"class="button" style="display:inline;">Upcoming Tournaments</a></button>
+        <button><a href="#/tournamentHistory"class="button">Tournament History</a></button>
+        <button><a href="#/aboutUs" class="button">About Us</a></button>
     </div>
     <br>
     <br>
     <br>
-    <button><a href="#/whatINeed.html" class="button">What do I need to play?</a></button>
+    <button><a href="#/whatINeed" class="button">What do I need to play?</a></button>
     <br>
-    <button><a href="#/elo-perf-calc.html" class="button">Rating Calculator</a></button>
+    <button><a href="#/elo-perf-calc" class="button">Rating Calculator</a></button>
     <br>
     <br>
     <br>
@@ -33,7 +34,7 @@
     <button><a href="http://www.kansaschess.org/"class="button">Kansas Chess Association</a></button>
     <br>
     <br>
-    <button><a href="#/donors.html" class="button">Donors List</a></button>
+    <button><a href="#/donors" class="button">Donors List</a></button>
     <br>
     <button><a href="https://www.paypal.com/donate/?hosted_button_id=N7BF4U2LKREKU&fbclid=IwAR335J2n6SALXAnVYFxivOOypj9-9tUcr5jPDWT-Rim7m26bN8yLFczjsTM" class="button">Donate to MHK Chess</a></button>
     <br>
@@ -47,12 +48,7 @@
     </form>
     <br>
     <br>
-    <div class="Footer" style="position:absolute; top:800px; left:10px; ">
-        <p style="color:black; position:absolute; top:70px; left:130px; font-size:20px;">USCF Affiliate: A7790127</p>
-        <h2><a href="mailto:mullinsel93@gmail.com" style="position:absolute; top:85px; left:850px; border:2px solid; text-align:center; margin: 0px; font-size:20px;">Contact Us</a></h2>
-        <img src="images/USCFlogo.png" alt="USCFlogo" style="position: absolute; top:22px; left:1px;" width="120" height="98"/>
-        <img src="images/white.png" alt="Footerbg" width="980" height="100" style = "border: 1px solid black;"/>
-    </div>
+    <Footer />
 </div>
 
 <style>

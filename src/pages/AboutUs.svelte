@@ -1,3 +1,7 @@
+<script>
+    import Footer from "../layout/Footer.svelte";
+
+</script>
 <svelte:head>
 	<title>About Us</title>
 </svelte:head>
@@ -12,14 +16,13 @@
         <a target="_blank" href = "https://www.facebook.com/Manhattanhessclub"><img src="images/fblogo.png" style="position:absolute; top:50px; left:940px" alt="Facebook Logo" width="40" height="40"/></a>
         <p style="color:black; position:absolute; top:100px; left:275px; font-size:30px;">Thursdays and Sundays 5pm</p>
         <p style="color:black; position:absolute; top:130px; left:275px; font-size:30px;">at UFM Community Learning Center</p>
-        <!--<p style="color:black; position:absolute; top:130px; left:325px; font-size:30px;">Thursday 6pm-9pm and Sunday 6pm-9pm</p>--->
     </div>
     
     <div class = "Navigation bar">
         <button><a href="#/" class="button">Home</a></button>
-        <button><a href="#/currentTournament.html" class="button">Current Tournament</a></button>
-        <button><a href="#/upcomingTournaments.html"class="button" style="display:inline;">Upcoming Tournaments</a></button>
-        <button><a href="#/tournamentHistory.html"class="button">Tournament History</a></button>
+        <button><a href="#/currentTournament" class="button">Current Tournament</a></button>
+        <button><a href="#/upcomingTournaments"class="button" style="display:inline;">Upcoming Tournaments</a></button>
+        <button><a href="#/tournamentHistory"class="button">Tournament History</a></button>
     </div>
     
     <br>
@@ -33,7 +36,7 @@
     <p style="color:black">We are a group of people who love to play chess in Manhattan Kansas.
         We aim to promote chess in the community though providing equipment, teaching, and hosting events.
         Come join us at one of our events. All skill levels and ages are welcome.</p>
-    <button><a href="#/donors.html" class="button">Donors List</a></button>
+    <button><a href="#/donors" class="button">Donors List</a></button>
     <br>
     <br>
     <button><a href="https://docs.google.com/spreadsheets/d/1U98BTKdcGr9xsiLMIy51R60DM2GyIqP35VEmo4A07Ig/edit?usp=sharing" class="button">MHK Chess financial logs</a></button>
@@ -55,12 +58,7 @@
     </form>
     <br>
     <br>
-    <div class="Footer" style="position:absolute; top:1000px; left:10px; ">
-        <p style="color:black; position:absolute; top:70px; left:130px; font-size:20px;">USCF Affiliate: A7790127</p>
-        <h2><a href="mailto:mullinsel93@gmail.com" style="position:absolute; top:85px; left:850px; border:2px solid; text-align:center; margin: 0px; font-size:20px;">Contact Us</a></h2>
-        <img src="images/USCFlogo.png" alt="USCFlogo" style="position: absolute; top:22px; left:1px;" width="120" height="98"/>
-        <img src="images/white.png" alt="Footerbg" width="980" height="100" style = "border: 1px solid black;"/>
-    </div>
+    <Footer top={1000}/>
 </div>
 
 <style>
