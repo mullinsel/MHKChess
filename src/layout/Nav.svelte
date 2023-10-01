@@ -1,9 +1,15 @@
-<div>
-    <button><a href="#/currentTournament" class="button">Current Tournament</a></button>
-    <button><a href="#/upcomingTournaments"class="button" style="display:inline;">Upcoming Tournaments</a></button>
-    <button><a href="#/tournamentHistory"class="button">Tournament History</a></button>
-    <button><a href="#/aboutUs" class="button">About Us</a></button>
-</div>
+<nav>
+    <ul class="list-none m-0">
+        <li><a href="#/currentTournament" class="button">Current Tournament</a></li>
+        <li>
+            <a href="#/upcomingTournaments" class="button" style="display:inline;"
+                >Upcoming Tournaments</a
+            >
+        </li>
+        <li><a href="#/tournamentHistory" class="button">Tournament History</a></li>
+        <li><a href="#/aboutUs" class="button">About Us</a></li>
+    </ul>
+</nav>
 
 <style>
     a.button {
@@ -17,17 +23,17 @@
         color: initial;
     }
     a:link {
-            color: black;
-            background-color: transparent;
-            text-decoration: underline;
+        color: black;
+        background-color: transparent;
+        text-decoration: underline;
     }
     a:visited {
-            color: black;
-            background-color: transparent;
-            text-decoration: underline;
+        color: black;
+        background-color: transparent;
+        text-decoration: underline;
     }
     a:active {
-            color: black;
-            background-color: transparent;
+        color: black;
+        background-color: transparent;
     }
 </style>
