@@ -1,7 +1,7 @@
 <script>
     import TempLogo from './TempLogo.svelte'
 </script>
-<nav class="shadow-md h-20 dark:bg-slate-800">
+<nav class="shadow-md h-20 bg-stone-100 dark:bg-slate-800 dark:text-white">
     <div class="pl-6 pr-6 flex flex-row items-center h-full">
         <a href="/" class="button">
             <TempLogo/>
