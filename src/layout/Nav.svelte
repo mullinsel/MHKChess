@@ -3,7 +3,7 @@
 </script>
 <nav class="shadow-md h-20 bg-stone-100 dark:bg-slate-800 dark:text-white">
     <div class="pl-6 pr-6 grid grid-rows-1 grid-cols-[200px_auto_200px] h-full items-center">
-        <a href="/">
+        <a href="/" class="h-8 w-8">
             <TempLogo/>
         </a>
         <div class="justify-self-center flex flex-row">
