@@ -2,7 +2,7 @@
     import TempLogo from './TempLogo.svelte'
     import HamburgerSvg from './HamburgerSvg.svelte'
 
-    // Whether to show mobile hamburger menu or not
+    // Whether to show the mobile nav dropdown or not
     let showMobileNav = false;
     function onHamburgerClick() {
         showMobileNav = !showMobileNav;
