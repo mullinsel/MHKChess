@@ -4,7 +4,7 @@
 
 <div class="h-screen bg-stone-100 dark:bg-gray-900 dark:text-white flex flex-col">
     <Nav />
-    <div class="md:h-full grid md:grid-cols-2 md:gap-6">
+    <div class="md:h-4/5 grid md:grid-cols-2 md:gap-6">
         <h1 class="p-6 font-heading text-4xl font-black m-auto">
             The Manhattan Chess Club
         </h1>
