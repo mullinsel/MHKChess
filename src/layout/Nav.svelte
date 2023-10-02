@@ -3,7 +3,7 @@
 </script>
 <nav class="shadow-md h-20 bg-stone-100 dark:bg-slate-800 dark:text-white">
     <div class="pl-6 pr-6 grid grid-rows-1 grid-cols-[200px_auto_200px] h-full items-center">
-        <a href="/" class="">
+        <a href="/">
             <TempLogo/>
         </a>
         <div class="justify-self-center flex flex-row">
@@ -16,6 +16,16 @@
                 <li><a href="#/aboutUs">About Us</a></li>
             </ul>
         </div>
-        <img class="h-9 justify-self-end" src="images/Facebook_Logo_Primary.png">
+        <div class="justify-self-end flex flex-row gap-3">
+            <a href="https://www.chess.com/clubs/members/manhattan-chess" target="_blank" class="h-9 w-9">
+                <img alt="chesscom_logo" class="h-9 m-auto" src="images/chesscom_pawn.png">
+            </a>
+            <a href="https://www.flickr.com/photos/198250331@N07/" target="_blank">
+                <img alt="flickr_logo" class="h-9 rounded-lg" src="images/flickr_logo.png">
+            </a>
+            <a href="https://www.facebook.com/Manhattanhessclub" target="_blank">
+                <img alt="fb_logo" class="h-9" src="images/Facebook_Logo_Primary.png">
+            </a>
+        </div>
     </div>
 </nav>
