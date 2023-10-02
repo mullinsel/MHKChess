@@ -7,6 +7,13 @@
     function onHamburgerClick() {
         showMobileNav = !showMobileNav;
     }
+
+    const pages = [
+        {href: '#/currentTournament', name: 'Current Tournament'},
+        {href: '#/upcomingTournaments', name: 'Upcoming Tournaments'},
+        {href: '#/tournamentHistory', name: 'Tournament History'},
+        {href: '#/aboutUs', name: 'About Us'},
+    ]
 </script>
 
 <nav class="h-20 bg-stone-100 dark:bg-slate-800 dark:text-white">
@@ -18,12 +25,9 @@
         <!-- Pages -->
         <div class="hidden md:flex justify-self-center flex-row">
             <ul class="list-none flex flex-row gap-6">
-                <li><a href="#/currentTournament">Current Tournament</a></li>
-                <li>
-                    <a href="#/upcomingTournaments">Upcoming Tournaments</a>
-                </li>
-                <li><a href="#/tournamentHistory">Tournament History</a></li>
-                <li><a href="#/aboutUs">About Us</a></li>
+                {#each pages as page}
+                    <li><a href={page.href}>{page.name}</a></li>
+                {/each}
             </ul>
         </div>
         <!-- Hamburger menu shows when mobile -->
