@@ -23,7 +23,7 @@
             <TempLogo/>
         </a>
         <!-- Pages -->
-        <div class="hidden md:flex justify-self-center flex-row">
+        <div class="justify-self-center hidden md:flex md:flex-row">
             <ul class="list-none flex flex-row gap-6">
                 {#each pages as page}
                     <li><a href={page.href}>{page.name}</a></li>
