@@ -17,14 +17,14 @@
             </ul>
         </div>
         <div class="justify-self-end flex flex-row gap-3">
-            <a href="https://www.chess.com/clubs/members/manhattan-chess" target="_blank" class="h-9 w-9">
-                <img alt="chesscom_logo" class="h-9 m-auto" src="images/chesscom_pawn.png">
+            <a href="https://www.chess.com/clubs/members/manhattan-chess" target="_blank" class="h-8 w-8">
+                <img alt="chesscom_logo" class="h-8 m-auto" src="images/chesscom_pawn.png">
             </a>
             <a href="https://www.flickr.com/photos/198250331@N07/" target="_blank">
-                <img alt="flickr_logo" class="h-9 rounded-lg" src="images/flickr_logo.png">
+                <img alt="flickr_logo" class="h-8 rounded-lg" src="images/flickr_logo.png">
             </a>
             <a href="https://www.facebook.com/Manhattanhessclub" target="_blank">
-                <img alt="fb_logo" class="h-9" src="images/Facebook_Logo_Primary.png">
+                <img alt="fb_logo" class="h-8" src="images/Facebook_Logo_Primary.png">
             </a>
         </div>
     </div>
