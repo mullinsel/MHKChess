@@ -15,7 +15,7 @@
         <a href="/" class="h-8 w-8">
             <TempLogo/>
         </a>
-        <!-- Other Pages -->
+        <!-- Pages -->
         <div class="hidden md:flex justify-self-center flex-row">
             <ul class="list-none flex flex-row gap-6">
                 <li><a href="#/currentTournament">Current Tournament</a></li>
