@@ -9,7 +9,7 @@
             The Manhattan Chess Club
         </h1>
         <div class="flex-col flex justify-center font-body p-6">
-            <p class="p-6 bg-amber-300 shadow-2xl rounded-lg h-3/4">
+            <p class="p-6 bg-amber-300 dark:bg-amber-600 shadow-2xl rounded-lg h-3/4">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut temporibus vero quae libero hic, quia vitae exercitationem eum perspiciatis. Molestias, aperiam repudiandae autem voluptatem atque tempora repellat ut incidunt distinctio.
             </p>
         </div>

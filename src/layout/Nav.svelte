@@ -2,7 +2,7 @@
     import TempLogo from './TempLogo.svelte'
 </script>
 <nav class="shadow-md h-20 bg-stone-100 dark:bg-slate-800 dark:text-white">
-    <div class="pl-6 pr-6 grid grid-rows-1 grid-cols-[200px_auto_200px] h-full items-center">
+    <div class="pl-6 pr-6 grid grid-rows-1 grid-cols-[10rem_auto_10rem] h-full items-center">
         <a href="/" class="h-8 w-8">
             <TempLogo/>
         </a>
@@ -17,7 +17,7 @@
             </ul>
         </div>
         <div class="justify-self-end flex flex-row gap-3">
-            <a href="https://www.chess.com/clubs/members/manhattan-chess" target="_blank" class="h-8 w-8">
+            <a href="https://www.chess.com/clubs/members/manhattan-chess" target="_blank" class="h-8 w-7">
                 <img alt="chesscom_logo" class="h-8 m-auto" src="images/chesscom_pawn.png">
             </a>
             <a href="https://www.flickr.com/photos/198250331@N07/" target="_blank">
