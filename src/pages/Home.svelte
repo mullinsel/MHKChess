@@ -3,13 +3,13 @@
 </script>
 
 <div class="h-screen bg-stone-100 dark:bg-gray-900 dark:text-white flex flex-col">
-    <Nav />
-    <div class="md:h-4/5 grid md:grid-cols-2 md:gap-6">
-        <h1 class="p-6 font-heading text-4xl font-black m-auto">
-            The Manhattan Chess Club
-        </h1>
-        <div class="flex-col flex justify-center font-body p-6">
-            <p class="p-6 bg-gray-300 dark:bg-gray-700 shadow-2xl rounded-lg h-3/4">
+    <div class="h-full sm:w-[640px] md:w-[768px] lg:w-[1024px] grid grid-rows-[5rem_1fr] m-auto">
+        <Nav />
+        <div class="h-full flex flex-col justify-center p-12">
+            <h1 class="font-heading text-4xl font-black">
+                The Manhattan Chess Club
+            </h1>
+            <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut temporibus vero quae libero hic, quia vitae exercitationem eum perspiciatis. Molestias, aperiam repudiandae autem voluptatem atque tempora repellat ut incidunt distinctio.
             </p>
         </div>
