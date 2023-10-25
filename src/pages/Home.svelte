@@ -2,7 +2,7 @@
     import Nav from '../layout/Nav.svelte';
 </script>
 
-<div class="h-screen bg-stone-100 dark:bg-gray-900 dark:text-white flex flex-col">
+<div class="h-screen bg-stone-100 flex flex-col">
     <div class="h-full sm:w-[640px] md:w-[768px] lg:w-[1024px] grid grid-rows-[5rem_1fr] m-auto">
         <Nav />
         <div class="h-full flex flex-col justify-center p-12">

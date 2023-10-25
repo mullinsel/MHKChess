@@ -16,7 +16,7 @@
     ]
 </script>
 
-<nav class="bg-stone-100 dark:bg-slate-800 dark:text-white">
+<nav class="bg-stone-100">
     <div class="pl-6 pr-6 grid grid-rows-1 grid-cols-[10rem_auto_10rem] h-full items-center">
         <!-- Main Logo -->
         <a href="/" class="h-8 w-8">
