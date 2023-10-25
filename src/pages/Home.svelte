@@ -5,12 +5,12 @@
 <div class="h-screen bg-gray-100 flex flex-col">
     <div class="h-full w-full grid grid-rows-[5rem_1fr]">
         <Nav />
-        <div class="h-full sm:w-[640px] md:w-[768px] lg:w-[1024px] flex flex-col justify-center p-12 m-auto">
+        <div class="h-full sm:w-[640px] md:w-[768px] lg:w-[1024px] flex flex-col p-12 justify-center m-auto">
             <h1 class="font-heading text-4xl font-black">
                 The Manhattan Chess Club
             </h1>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut temporibus vero quae libero hic, quia vitae exercitationem eum perspiciatis. Molestias, aperiam repudiandae autem voluptatem atque tempora repellat ut incidunt distinctio.
+                Thursdays and Sundays 5pm at the <a href="https://tryufm.org/" class="underline">UFM Learning Center</a>
             </p>
         </div>
     </div>
