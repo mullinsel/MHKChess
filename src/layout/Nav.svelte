@@ -23,17 +23,13 @@
             <TempLogo/>
         </a>
         <!-- Pages -->
-        <div class="justify-self-center hidden md:flex md:flex-row">
+        <div class="justify-self-center flex flex-row">
             <ul class="list-none flex flex-row gap-6">
                 {#each pages as page}
                     <li><a href={page.href}>{page.name}</a></li>
                 {/each}
             </ul>
         </div>
-        <!-- Hamburger menu shows when mobile -->
-        <button on:click={onHamburgerClick} class="justify-self-center md:hidden h-8 w-8">
-            <HamburgerSvg/>
-        </button>
         <!-- Links to other sites -->
         <div class="justify-self-end flex flex-row gap-3">
             <a href="https://www.chess.com/clubs/members/manhattan-chess" target="_blank" class="h-8 w-7">
