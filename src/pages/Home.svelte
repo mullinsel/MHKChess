@@ -16,14 +16,21 @@
           class="underline">UFM Learning Center</a
         >
       </p>
-      <a
-        href="mailto:mullinsel93@gmail.com"
-        class="block p-2 px-6 w-fit bg-blue-600 hover:bg-blue-700 text-white rounded-full"
-        >Contact Us</a
-      >
+      <div class="flex flex-row gap-3">
+        <a
+          href="mailto:mullinsel93@gmail.com"
+          class="block p-2 px-6 w-fit bg-blue-600 hover:bg-blue-700 text-white rounded-full"
+          >Contact Us</a
+        >
+        <a
+          href="#/whatINeed"
+          class="block p-2 px-6 w-fit bg-blue-600 hover:bg-blue-700 text-white rounded-full"
+          >What do I need to play?</a
+        >
+      </div>
     </div>
+    <img src="images/landing_photo.jpg" alt="playing-chess" class="h-full rounded-lg" />
     <div class="flex flex-row justify-between">
-      <a href="#/whatINeed">What do I need to play?</a>
       <!-- <a href="#/elo-perf-calc">Rating Calculator</a> -->
       <a href="http://www.kansaschess.org/">Kansas Chess Association</a>
       <a href="#/donors">Donors List</a>
