@@ -4,34 +4,41 @@
 </script>
 
 <div class="h-screen bg-gray-100 flex flex-col">
-  <div class="h-full w-full grid grid-rows-[5rem_1fr_5rem]">
-    <Nav />
+  <Nav />
+  <div class="flex justify-center items-center grow">
     <div
-      class="h-full sm:w-[640px] md:w-[768px] lg:w-[1024px] flex flex-col p-12 justify-center m-auto gap-4"
+      class="h-full sm:w-[640px] md:w-[768px] lg:w-[1024px] justify-center grid grid-cols-2 items-center gap-4"
     >
-      <div class="text-4xl">The Manhattan Chess Club</div>
-      <p>
-        We meet on Thursdays and Sundays 5pm at the <a
-          href="https://tryufm.org/"
-          class="underline">UFM Learning Center</a
-        >
-      </p>
-      <div class="flex flex-row gap-3">
-        <a
-          href="mailto:mullinsel93@gmail.com"
-          class="block p-2 px-6 w-fit bg-blue-600 hover:bg-blue-700 text-white rounded-full"
-          >Contact Us</a
-        >
-        <a
-          href="#/whatINeed"
-          class="block p-2 px-6 w-fit bg-blue-600 hover:bg-blue-700 text-white rounded-full"
-          >What do I need to play?</a
-        >
+      <div class="flex flex-col gap-3">
+        <div class="text-3xl leading-tight">The Manhattan Chess Club</div>
+        <p>
+          We meet on Thursdays and Sundays 5pm at the <a
+            href="https://tryufm.org/"
+            class="underline">UFM Learning Center</a
+          >
+        </p>
+        <div class="flex flex-row gap-3">
+          <a
+            href="mailto:mullinsel93@gmail.com"
+            class="block p-2 px-6 w-fit bg-blue-600 hover:bg-blue-700 text-white rounded-full"
+            >Contact Us</a
+          >
+          <!-- <a
+            href="#/whatINeed"
+            class="block p-2 px-6 w-fit bg-blue-600 hover:bg-blue-700 text-white rounded-full"
+            >What do I need to play?</a
+          > -->
+        </div>
       </div>
+      <img
+        src="images/landing_photo.jpg"
+        alt="playing-chess"
+        class="w-full rounded-lg drop-shadow-2xl"
+      />
     </div>
-    <img src="images/landing_photo.jpg" alt="playing-chess" class="h-full rounded-lg" />
-    <div class="flex flex-row justify-between">
-      <!-- <a href="#/elo-perf-calc">Rating Calculator</a> -->
+  </div>
+  <!-- <div class="flex flex-row justify-between row-span-1">
+      <a href="#/elo-perf-calc">Rating Calculator</a>
       <a href="http://www.kansaschess.org/">Kansas Chess Association</a>
       <a href="#/donors">Donors List</a>
       <a
@@ -45,6 +52,5 @@
           class="h-full rounded-lg"
         />
       </a>
-    </div>
-  </div>
+    </div> -->
 </div>
