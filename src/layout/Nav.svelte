@@ -9,9 +9,7 @@
     }
 
     const pages = [
-        {href: '#/currentTournament', name: 'Current Tournament'},
-        {href: '#/upcomingTournaments', name: 'Upcoming Tournaments'},
-        {href: '#/tournamentHistory', name: 'Tournament History'},
+        {href: '#/tournaments', name: 'Tournaments'},
         {href: '#/aboutUs', name: 'About Us'},
     ]
 </script>

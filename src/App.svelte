@@ -15,6 +15,7 @@
     import OpenResults_v2 from './pages/openresults_v2.svelte';
     import U1400Results_v2 from './pages/u1400results_v2.svelte';
     import GlobalStyle from './GlobalStyle.svelte';
+    import Tournaments from './pages/Tournaments.svelte';
 
     const routes = {
         '/': Home,
@@ -30,6 +31,7 @@
         '/elo-perf-calc': EloPerfCalc,
         '/openresults_v2': OpenResults_v2,
         '/u1400results_v2': U1400Results_v2,
+        '/tournaments': Tournaments,
     };
 </script>
 
