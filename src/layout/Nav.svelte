@@ -1,33 +1,46 @@
-<div>
-    <button><a href="#/currentTournament" class="button">Current Tournament</a></button>
-    <button><a href="#/upcomingTournaments"class="button" style="display:inline;">Upcoming Tournaments</a></button>
-    <button><a href="#/tournamentHistory"class="button">Tournament History</a></button>
-    <button><a href="#/aboutUs" class="button">About Us</a></button>
-</div>
+<script>
+    import TempLogo from './TempLogo.svelte'
+    import HamburgerSvg from './HamburgerSvg.svelte'
 
-<style>
-    a.button {
-        -webkit-appearance: button;
-        -moz-appearance: button;
-        appearance: button;
-        height: 10px;
-        width: 200px;
-        font-size: 18px;
-        text-decoration: none;
-        color: initial;
+    // Whether to show the mobile nav dropdown or not
+    let showMobileNav = false;
+    function onHamburgerClick() {
+        showMobileNav = !showMobileNav;
     }
-    a:link {
-            color: black;
-            background-color: transparent;
-            text-decoration: underline;
-    }
-    a:visited {
-            color: black;
-            background-color: transparent;
-            text-decoration: underline;
-    }
-    a:active {
-            color: black;
-            background-color: transparent;
-    }
-</style>
+
+    const pages = [
+        {href: '#/currentTournament', name: 'Current Tournament'},
+        {href: '#/upcomingTournaments', name: 'Upcoming Tournaments'},
+        {href: '#/tournamentHistory', name: 'Tournament History'},
+        {href: '#/aboutUs', name: 'About Us'},
+    ]
+</script>
+
+<nav class="bg-gray-100 shadow row-span-1 h-20">
+    <div class="pl-6 pr-6 grid grid-rows-1 grid-cols-[10rem_auto_10rem] h-full items-center">
+        <!-- Main Logo -->
+        <a href="/" class="h-8 w-8">
+            <TempLogo/>
+        </a>
+        <!-- Pages -->
+        <div class="justify-self-center flex flex-row">
+            <ul class="list-none flex flex-row gap-6">
+                {#each pages as page}
+                    <li><a href={page.href}>{page.name}</a></li>
+                {/each}
+            </ul>
+        </div>
+        <!-- Links to other sites -->
+        <div class="justify-self-end flex flex-row gap-3">
+            <a href="https://www.chess.com/clubs/members/manhattan-chess" target="_blank" class="h-8 w-7">
+                <img alt="chesscom_logo" class="h-8 m-auto" src="images/chesscom_pawn.png">
+            </a>
+            <a href="https://www.flickr.com/photos/198250331@N07/" target="_blank">
+                <img alt="flickr_logo" class="h-8 rounded-lg" src="images/flickr_logo.png">
+            </a>
+            <a href="https://www.facebook.com/Manhattanhessclub" target="_blank">
+                <img alt="fb_logo" class="h-8" src="images/Facebook_Logo_Primary.png">
+            </a>
+        </div>
+    </div>
+</nav>
