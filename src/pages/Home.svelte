@@ -5,7 +5,7 @@
 
 <div class="h-screen bg-gray-100 flex flex-col">
   <Nav />
-  <div class="flex justify-center items-center grow">
+  <div class="flex justify-center items-center grow mb-20">
     <div
       class="h-full sm:w-[640px] md:w-[768px] lg:w-[1024px] justify-center grid grid-cols-2 items-center gap-4"
     >
