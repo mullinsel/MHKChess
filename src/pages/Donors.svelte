@@ -26,6 +26,7 @@
     <br>
     <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color:black;">King Level Donors <br> (100 Dollars) </h2>
     <h3 style="color:black;">Mory Mort</h3>
+    <h3 style="color:black;">Lee Schnee</h3>
     <br>
     <br>
     <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color:black;">Knight Level Donors <br> (50 Dollars)</h2>
@@ -37,6 +38,8 @@
     <br>
     <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color:black;">Pawn Level Donors <br> (25 Dollars) </h2>
     <h3 style="color:black;">Andrew McCready</h3>
+    <h3 style="color:black;">John Miller</h3>
+
 
     <Footer top={800}/>
 </div>
