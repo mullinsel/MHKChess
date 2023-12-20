@@ -30,14 +30,16 @@
     <br>
     <br>
     <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color:black;">Knight Level Donors <br> (50 Dollars)</h2>
+    <h3 style="color:black;">Ivan Blank</h3>
     <h3 style="color:black;">Charles Carlson</h3>
     <h3 style="color:black;">Tom Claman</h3>
+    <h3 style="color:black;">Andrew McCready</h3>
     <h3 style="color:black;">Eric Mullins</h3>
+    <h3 style="color:black;">Tom Seeley</h3>
 
     <br>
     <br>
     <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black; color:black;">Pawn Level Donors <br> (25 Dollars) </h2>
-    <h3 style="color:black;">Andrew McCready</h3>
     <h3 style="color:black;">John Miller</h3>
 
 

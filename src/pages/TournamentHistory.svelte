@@ -30,11 +30,15 @@
 <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black;">Prize Tournaments</h2>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202305217832-30543972" class="button">Manhattan Open and Kansas Senior Championship 2023 (Guy Coffee Memorial) </a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202308263222-30543972" class="button">MHK Back To School Tournament </a></h4>
+<h4><a href="https://www.uschess.org/msa/XtblMain.php?202312167702-30586962" class="button">Winter Physics/Math Open </a></h4>
+
 
 <br>
 <br>
 <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black;">Club Night Tournaments</h2>
 <h4><a href="https://docs.google.com/spreadsheets/d/1BF9-v2nxsVGppqN8Jkk4_nFox_zaBU8ihNH6qsxRZWE/edit?usp=sharing" class="button">Club Night League Standings</a></h4>
+<h4><a href="https://www.uschess.org/msa/XtblMain.php?202312146792-30586962" class="button">Club Night 12/14/23</a></h4>
+<h4><a href="https://www.uschess.org/msa/XtblMain.php?202312076782-30586962" class="button">Club Night 12/07/23</a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202311306722-30543972" class="button">Club Night 11/30/23</a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202311169542-30543972" class="button">Club Night 11/16/23</a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202311098882-30543972" class="button">Club Night 11/09/23</a></h4>
@@ -89,6 +93,8 @@
 <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black;">Other Tournaments</h2>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202308038572-30558709"class="button">MHK Match 8/3/23</a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202306257022-17076527"class="button">Sunday Match 6/25/23</a></h4>
+<h4><a href="https://www.uschess.org/msa/XtblMain.php?202312167712"class="button">Winter Physics/Math Scholastic 6/25/23</a></h4>
+
 
 <Footer top={2500}/>
 </div>

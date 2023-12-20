@@ -27,7 +27,6 @@
     </div>
     <br>
     <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black;">Prize Tournaments</h2>
-    <h4><a href="https://www.kingregistration.com/event/WinterPhysics" class="button">Winter Physics/Math Chess Tournament</a></h4>
     <br>
     <br>
     <br>
