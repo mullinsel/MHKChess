@@ -15,7 +15,6 @@
     <a target="_blank" href ="https://www.flickr.com/photos/198250331@N07/"> <img src="images/flickerlogo.png" style="position:absolute; top:100px; left:900px" alt="Flicker Logo" width="80" height="40"/></a>
     <a target="_blank" href = "https://www.facebook.com/Manhattanhessclub"><img src="images/fblogo.png" style="position:absolute; top:50px; left:940px" alt="Facebook Logo" width="40" height="40"/></a>
     <p style="color:black; position:absolute; top:100px; left:275px; font-size:30px;">Thursdays and Sundays 5pm</p>
-    <p style="color:black; position:absolute; top:130px; left:275px; font-size:30px;">at UFM Community Learning Center</p>
     <!--<p style="color:black; position:absolute; top:130px; left:325px; font-size:30px;">Thursday 6pm-9pm and Sunday 6pm-9pm</p>--->
 </div>
 
@@ -93,7 +92,7 @@
 <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black;">Other Tournaments</h2>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202308038572-30558709"class="button">MHK Match 8/3/23</a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202306257022-17076527"class="button">Sunday Match 6/25/23</a></h4>
-<h4><a href="https://www.uschess.org/msa/XtblMain.php?202312167712"class="button">Winter Physics/Math Scholastic 6/25/23</a></h4>
+<h4><a href="https://www.uschess.org/msa/XtblMain.php?202312167712"class="button">Winter Physics/Math Scholastic</a></h4>
 
 
 <Footer top={2500}/>
