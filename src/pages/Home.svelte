@@ -11,7 +11,7 @@
         <a target="_blank" href ="https://www.flickr.com/photos/198250331@N07/"> <img src="images/flickerlogo.png" style="position:absolute; top:100px; left:900px" alt="Flicker Logo" width="80" height="40"/></a>
         <a target="_blank" href = "https://www.facebook.com/Manhattanhessclub"><img src="images/fblogo.png" style="position:absolute; top:50px; left:940px" alt="Facebook Logo" width="40" height="40"/></a>
         <p style="color:black; position:absolute; top:100px; left:275px; font-size:30px;">Village Geek</p>
-        <p style="color:black; position:absolute; top:100px; left:275px; font-size:30px;">Tuesday and Sunday starting at 5pm</p>
+        <p style="color:black; position:absolute; top:130px; left:275px; font-size:30px;">Tuesday and Sunday starting at 5pm</p>
         <!--<p style="color:black; position:absolute; top:130px; left:325px; font-size:30px;">Thursday 6pm-9pm and Sunday 6pm-9pm</p>--->
     </div>
     <div class = "Navigation bar">
@@ -29,7 +29,7 @@
     <br>
     <br>
     <br>
-    <button><a href="https://tryufm.org/"class="button">UFM Community Learning Center</a></button>
+    <button><a href="https://www.villagegeekgames.com/manhattan"class="button">The Village Geek</a></button>
     <button><a href="http://www.kansaschess.org/"class="button">Kansas Chess Association</a></button>
     <br>
     <br>
