@@ -35,6 +35,8 @@
     <br>
     <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black;"> Saturday Showdown tournament 4 round swiss G/30;d5 dual rated
     <br>We aim to host these every other saturday depending on other local tournaments</h2>
+    <h4><a href="https://www.kingregistration.com/event/ShowdownSaturday224" class="button">Saturday Showdown 2/24/24</a></h4>
+
     <br>
     <br>
     <br>
