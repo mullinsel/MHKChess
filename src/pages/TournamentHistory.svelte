@@ -36,6 +36,13 @@
 <br>
 <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black;">Club Night Tournaments</h2>
 <h4><a href="https://docs.google.com/spreadsheets/d/1BF9-v2nxsVGppqN8Jkk4_nFox_zaBU8ihNH6qsxRZWE/edit?usp=sharing" class="button">Club Night League Standings</a></h4>
+<h4><a href="https://www.uschess.org/msa/XtblMain.php?202404020982-30543972" class="button">Club Night 4/2/24</a></h4>
+<h4><a href="https://www.uschess.org/msa/XtblMain.php?202403266552-30543972" class="button">Club Night 3/26/24</a></h4>
+<h4><a href="https://www.uschess.org/msa/XtblMain.php?202403191782-30543972" class="button">Club Night 3/19/24</a></h4>
+<h4><a href="https://www.uschess.org/msa/XtblMain.php?202403127332-30543972" class="button">Club Night 3/12/24</a></h4>
+<h4><a href="https://www.uschess.org/msa/XtblMain.php?202403053112-30543972" class="button">Club Night 3/5/24</a></h4>
+<h4><a href="https://www.uschess.org/msa/XtblMain.php?202402270632-30543972" class="button">Club Night 2/27/24</a></h4>
+<h4><a href="https://www.uschess.org/msa/XtblMain.php?202402202932-30543972" class="button">Club Night 2/20/24</a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202402139252-30543972" class="button">Club Night 2/13/24</a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202402067172-30543972" class="button">Club Night 2/6/24</a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202401300672-30586962" class="button">Club Night 1/30/24</a></h4>
