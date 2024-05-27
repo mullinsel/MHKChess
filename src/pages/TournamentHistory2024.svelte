@@ -3,7 +3,7 @@
 
 </script>
 <svelte:head>
-    <title>Tournament History</title>
+    <title>Tournament History 2024</title>
 </svelte:head>
 
 <div class="tournament-history">
