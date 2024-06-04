@@ -27,6 +27,7 @@
 <br>
 <br>
 <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black;">Prize Tournaments</h2>
+<h4><a href="https://www.uschess.org/msa/XtblMain.php?202406020852-30543972" class="button">Manhattan Open (Guy Coffee Memorial) and Kansas Senior Championship 2024 (Tom Claman Memorial) </a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202305217832-30543972" class="button">Manhattan Open and Kansas Senior Championship 2023 (Guy Coffee Memorial) </a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202308263222-30543972" class="button">MHK Back To School Tournament </a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202312167702-30586962" class="button">Winter Physics/Math Open </a></h4>
@@ -36,6 +37,8 @@
 <br>
 <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black;">Club Night Tournaments</h2>
 <h4><a href="https://docs.google.com/spreadsheets/d/1BF9-v2nxsVGppqN8Jkk4_nFox_zaBU8ihNH6qsxRZWE/edit?usp=sharing" class="button">Club Night League Standings</a></h4>
+<h4><a href="https://www.uschess.org/msa/XtblMain.php?202405281272-30543972" class="button">Club Night 5/28/24</a></h4>
+
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202405214352-30586962" class="button">Club Night 5/21/24</a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202405075592-30586962" class="button">Club Night 5/7/24</a></h4>
 <h4><a href="https://www.uschess.org/msa/XtblMain.php?202404303002-30586962" class="button">Club Night 4/30/24</a></h4>
