@@ -31,6 +31,7 @@
     <br>
     <button><a href="https://www.villagegeekgames.com/manhattan"class="button">The Village Geek</a></button>
     <button><a href="http://www.kansaschess.org/"class="button">Kansas Chess Association</a></button>
+    <button><a href="https://kcchess.carrd.co/#"class="button">KC Knights Chess Club</a></button>
     <br>
     <br>
     <button><a href="#/donors" class="button">Donors List</a></button>
