@@ -14,6 +14,7 @@
   import OpenResults_v2 from './pages/openresults_v2.svelte';
   import U1400Results_v2 from './pages/u1400results_v2.svelte'
   import GlobalStyle from './GlobalStyle.svelte';
+    import TournamentHistory2025 from './pages/TournamentHistory2025.svelte';
   import TournamentHistory2024 from './pages/TournamentHistory2024.svelte';
   import TournamentHistory2023 from './pages/TournamentHistory2023.svelte'
 
