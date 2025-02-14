@@ -30,8 +30,10 @@
       '/elo-perf-calc': EloPerfCalc,
       '/openresults_v2': OpenResults_v2,
       '/u1400results_v2': U1400Results_v2,
+      '/tournamentHistory2025': TournamentHistory2025,
       '/tournamentHistory2024': TournamentHistory2024,
       '/tournamentHistory2023': TournamentHistory2023,
+
   }
 </script>
 
