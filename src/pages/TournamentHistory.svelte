@@ -35,6 +35,7 @@
 <br>
 <h2 style="background: white; margin: 10px; padding: 10px; border: 1px solid black;">Club Night Tournaments</h2>
 <h4><a href="https://docs.google.com/spreadsheets/d/1BF9-v2nxsVGppqN8Jkk4_nFox_zaBU8ihNH6qsxRZWE/edit?usp=sharing" class="button">Club Night League Standings</a></h4>
+<h4><a href="#/tournamentHistory2025"class="button">2025 Tournaments</a></h4>
 <h4><a href="#/tournamentHistory2024"class="button">2024 Tournaments</a></h4>
 <h4><a href="#/tournamentHistory2023"class="button">2023 Tournaments</a></h4>
 <br>
